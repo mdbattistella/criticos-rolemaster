@@ -1,0 +1,2598 @@
+{
+  "corte": {
+    "label": "Corte",
+    "tipo": "critico",
+    "filas": [
+      {
+        "min": 1,
+        "max": 10,
+        "A": {
+          "texto": "Tu hoja silba en el aire y apenas besa la tela de su ropa. Un aviso, no una herida: la próxima no será tan amable.",
+          "dano": 1,
+          "efectos": ""
+        },
+        "B": {
+          "texto": "El acero dibuja una línea roja en su antebrazo. La sangre brota fina, y por primera vez ves duda en sus ojos.",
+          "dano": 3,
+          "efectos": ""
+        },
+        "C": {
+          "texto": "Un tajo cruza su hombro y lo obliga a girar el torso. Su contraataque llega torpe, desarmado por el dolor.",
+          "dano": 5,
+          "efectos": "Desventaja en su próximo ataque"
+        },
+        "D": {
+          "texto": "Tu filo se hunde en el muslo con un sonido húmedo. La pierna le tiembla y cada paso le cuesta el doble.",
+          "dano": 7,
+          "efectos": "Velocidad -10 pies por 1 ronda"
+        },
+        "E": {
+          "texto": "Abrís su costado de un tajo largo y brutal. El enemigo se dobla sobre la herida, sin aire, sin voluntad de atacar.",
+          "dano": 9,
+          "efectos": "Aturdido 1 ronda"
+        }
+      },
+      {
+        "min": 11,
+        "max": 25,
+        "A": {
+          "texto": "Tu golpe corta una correa de su armadura; la placa queda colgando, golpeándole las costillas a cada movimiento.",
+          "dano": 2,
+          "efectos": "CA -1 hasta reajustarla (acción)"
+        },
+        "B": {
+          "texto": "El filo muerde la mano que sostiene el arma. Los dedos se aflojan y el acero le pesa como plomo.",
+          "dano": 4,
+          "efectos": "Desventaja en su próximo ataque"
+        },
+        "C": {
+          "texto": "Un corte limpio en la frente. Un velo de sangre le baja a los ojos y lanza tajos a ciegas contra la nada.",
+          "dano": 6,
+          "efectos": "Cegado hasta limpiarse (acción)"
+        },
+        "D": {
+          "texto": "Rasgás la pantorrilla hasta el músculo. Cada latido deja un charco nuevo bajo sus pies.",
+          "dano": 8,
+          "efectos": "Sangrado 1d4 por turno (CD 12 Medicina)"
+        },
+        "E": {
+          "texto": "Tu hoja abre su pecho en diagonal, de clavícula a esternón. Retrocede tambaleando, mirando incrédulo la sangre en sus manos.",
+          "dano": 10,
+          "efectos": "Aturdido 1 ronda; sangrado 1d4"
+        }
+      },
+      {
+        "min": 26,
+        "max": 40,
+        "A": {
+          "texto": "Un golpe de plano le arranca el aliento en un jadeo. Queda expuesto, con la guardia rota por un instante eterno.",
+          "dano": 3,
+          "efectos": "Pierde su reacción"
+        },
+        "B": {
+          "texto": "Tu acero encuentra el brazo del escudo. La defensa cae como un portón sin bisagras.",
+          "dano": 5,
+          "efectos": "Sin bonificador de escudo 1 ronda"
+        },
+        "C": {
+          "texto": "El tajo muerde la cadera y le roba la firmeza de la marcha. Ahora cojea como un lobo herido.",
+          "dano": 7,
+          "efectos": "Velocidad a la mitad 2 rondas"
+        },
+        "D": {
+          "texto": "El filo se clava en la clavícula con un crujido. Un alarido, y su arma rueda por el suelo.",
+          "dano": 9,
+          "efectos": "Desarmado"
+        },
+        "E": {
+          "texto": "Cortás bajo la axila, donde ninguna armadura protege. El brazo queda colgando, inerte, como el de un títere sin hilos.",
+          "dano": 11,
+          "efectos": "Brazo inútil hasta curación (3+ nivel)"
+        }
+      },
+      {
+        "min": 41,
+        "max": 55,
+        "A": {
+          "texto": "Tu hoja le abre la mejilla de oreja a boca. Llevará esa cicatriz toda su vida… y el miedo a tu acero también.",
+          "dano": 4,
+          "efectos": "Asustado de vos 1 ronda"
+        },
+        "B": {
+          "texto": "Un tajo seco en el dorso de la mano. El arma se le escurre entre dedos ensangrentados.",
+          "dano": 6,
+          "efectos": "Salvación FUE CD 13 o desarmado"
+        },
+        "C": {
+          "texto": "Rebanás el tendón detrás de la rodilla. La pierna simplemente deja de existir y cae de rodillas ante vos.",
+          "dano": 8,
+          "efectos": "Derribado"
+        },
+        "D": {
+          "texto": "Abrís su vientre de lado a lado. Se aferra la herida con ambas manos, luchando por mantenerse entero.",
+          "dano": 10,
+          "efectos": "Sangrado 1d6; desventaja en ataques"
+        },
+        "E": {
+          "texto": "Un tajo épico de hombro a cadera. El enemigo se desploma en una lluvia roja, y el campo entero contiene la respiración.",
+          "dano": 12,
+          "efectos": "Derribado; aturdido 1 ronda; sangrado 1d6"
+        }
+      },
+      {
+        "min": 56,
+        "max": 70,
+        "A": {
+          "texto": "Giras con el impulso del golpe y tu filo lo roza en un arco brillante. Queda mareado, sin saber de dónde vino el ataque.",
+          "dano": 5,
+          "efectos": "Desventaja en su próximo ataque y salvación"
+        },
+        "B": {
+          "texto": "Tu hoja se lleva una oreja limpia. El alarido corta el aire mientras se cubre el muñón con la mano.",
+          "dano": 7,
+          "efectos": "Asustado 1 ronda"
+        },
+        "C": {
+          "texto": "El acero se hunde en el antebrazo hasta el hueso. El arma cae, y la sangre la sigue en un hilo constante.",
+          "dano": 9,
+          "efectos": "Desarmado; sangrado 1d4"
+        },
+        "D": {
+          "texto": "Tu golpe le parte la rodilla de lado. La articulación cede con un chasquido y ya no podrá sostenerse sola.",
+          "dano": 11,
+          "efectos": "Derribado; velocidad 0 hasta curación"
+        },
+        "E": {
+          "texto": "Abrís su cuello hasta la mitad. Se lleva las manos a la garganta, ahogándose en su propia sangre.",
+          "dano": 13,
+          "efectos": "Aturdido 2 rondas; sangrado 2d4"
+        }
+      },
+      {
+        "min": 71,
+        "max": 85,
+        "A": {
+          "texto": "El filo entra entre las costillas y el aire escapa silbando por la herida. Se queda congelado, incapaz de reaccionar.",
+          "dano": 6,
+          "efectos": "Aturdido 1 ronda"
+        },
+        "B": {
+          "texto": "Tu hoja cae sobre sus dedos. Dos de ellos golpean el suelo antes que el arma. Esa mano nunca volverá a ser la misma.",
+          "dano": 8,
+          "efectos": "Desarmado; desventaja permanente con esa mano"
+        },
+        "C": {
+          "texto": "El tajo baja por el muslo y choca contra el hueso. Cae como un árbol talado, dejando un río carmesí detrás.",
+          "dano": 10,
+          "efectos": "Derribado; sangrado 1d6"
+        },
+        "D": {
+          "texto": "Cruzás su rostro de lado a lado. Un ojo se apaga para siempre mientras el otro te mira con puro terror.",
+          "dano": 12,
+          "efectos": "Cegado 1 ronda; desventaja permanente en Percepción visual"
+        },
+        "E": {
+          "texto": "Un tajo devastador a la altura del codo. El antebrazo vuela por el aire, aún aferrando su arma, y aterriza lejos de su dueño.",
+          "dano": 14,
+          "efectos": "Pierde el brazo; aturdido 2 rondas; sangrado 2d6"
+        }
+      },
+      {
+        "min": 86,
+        "max": 95,
+        "A": {
+          "texto": "Tu acero golpea el yelmo con tal fuerza que hace sonar campanas en su cráneo. Ve estrellas en pleno día.",
+          "dano": 7,
+          "efectos": "Aturdido 1 ronda"
+        },
+        "B": {
+          "texto": "El filo se hunde en el vientre como si fuera manteca. La herida es honda y oscura; no se cerrará sola.",
+          "dano": 9,
+          "efectos": "Sangrado 1d8"
+        },
+        "C": {
+          "texto": "Un corte limpio a la muñeca. La mano cae al suelo con el arma todavía apretada en un puño muerto.",
+          "dano": 11,
+          "efectos": "Pierde la mano; sangrado 1d6"
+        },
+        "D": {
+          "texto": "Tu hoja atraviesa la pierna bajo la rodilla. Cae gritando, mirando su pie a un metro de distancia.",
+          "dano": 13,
+          "efectos": "Pierde la pierna; derribado; sangrado 2d6"
+        },
+        "E": {
+          "texto": "El acero encuentra la garganta. Gorgotea, cae, y la vida se le escapa en latidos rojos. Sólo la magia podría salvarlo.",
+          "dano": 15,
+          "efectos": "Moribundo en 1d4 rondas"
+        }
+      },
+      {
+        "min": 96,
+        "max": 100,
+        "A": {
+          "texto": "Un golpe tan espectacular que su armadura queda colgando en tiras, revelando la carne indefensa debajo.",
+          "dano": 8,
+          "efectos": "CA -2 hasta reparar"
+        },
+        "B": {
+          "texto": "Tu tajo abre el flanco hasta dejar las costillas a la vista. El dolor lo deja paralizado en el lugar.",
+          "dano": 10,
+          "efectos": "Aturdido 2 rondas; sangrado 1d8"
+        },
+        "C": {
+          "texto": "El filo cae sobre el hombro y no se detiene. El brazo entero se separa y el enemigo mira el hueco con incredulidad.",
+          "dano": 12,
+          "efectos": "Pierde el brazo; aturdido 2 rondas"
+        },
+        "D": {
+          "texto": "Tu golpe cruza la espalda y corta algo vital en la columna. Sus piernas se doblan y nunca más responden.",
+          "dano": 14,
+          "efectos": "Paralizado de la cintura abajo"
+        },
+        "E": {
+          "texto": "Un arco perfecto de acero lo parte en dos a la altura de la cintura. Por un segundo, ambas mitades parecen no entenderlo.",
+          "dano": 16,
+          "efectos": "Muerte instantánea"
+        }
+      },
+      {
+        "min": 101,
+        "max": 125,
+        "A": {
+          "texto": "Tu hoja se filtra por la juntura del yelmo y le roza el ojo. Grita, ciego, tanteando el aire con desesperación.",
+          "dano": 9,
+          "efectos": "Cegado 2 rondas"
+        },
+        "B": {
+          "texto": "El filo abre la garganta, pero no del todo. Aún vive, arrodillado, mientras la sangre baña su pecho.",
+          "dano": 11,
+          "efectos": "Sangrado 2d6; aturdido 1 ronda"
+        },
+        "C": {
+          "texto": "Un golpe brutal a la cadera. La pierna entera se desprende y el enemigo cae inconsciente por el shock.",
+          "dano": 13,
+          "efectos": "Pierde la pierna; inconsciente"
+        },
+        "D": {
+          "texto": "Tu acero entra por el cuello y casi lo atraviesa. Cae de rodillas, la cabeza en un ángulo imposible; le quedan segundos.",
+          "dano": 15,
+          "efectos": "Muere al final de su próximo turno"
+        },
+        "E": {
+          "texto": "La cabeza vuela. El cuerpo permanece de rodillas un latido más, como rindiéndote homenaje, antes de desplomarse.",
+          "dano": 17,
+          "efectos": "Muerte instantánea"
+        }
+      },
+      {
+        "min": 126,
+        "max": 999,
+        "A": {
+          "texto": "Un golpe tan feroz que destroza su guardia y su espíritu. Ya no te ve como un rival: te ve como su muerte.",
+          "dano": 10,
+          "efectos": "Asustado 1 minuto"
+        },
+        "B": {
+          "texto": "Tu tajo abre su torso de lado a lado. Cae entre sus propias entrañas, la vida colgando de un hilo.",
+          "dano": 12,
+          "efectos": "Inconsciente; sangrado 2d6"
+        },
+        "C": {
+          "texto": "El filo baja sobre el cráneo y lo parte en diagonal. Todavía da un paso más, pero ya está muerto y no lo sabe.",
+          "dano": 14,
+          "efectos": "Muere en 1d4 rondas"
+        },
+        "D": {
+          "texto": "Un solo golpe, limpio como un juicio divino. La cabeza rueda y el silencio se apodera del campo de batalla.",
+          "dano": 16,
+          "efectos": "Muerte instantánea"
+        },
+        "E": {
+          "texto": "Lo partís en dos de hombro a cadera en un tajo legendario. Sus aliados ven las dos mitades caer… y huyen gritando.",
+          "dano": 18,
+          "efectos": "Muerte instantánea; aliados a 30 pies: salvación SAB CD 15 o asustados"
+        }
+      }
+    ]
+  },
+  "aplastamiento": {
+    "label": "Aplastamiento",
+    "tipo": "critico",
+    "filas": [
+      {
+        "min": 1,
+        "max": 10,
+        "A": {
+          "texto": "Tu golpe resuena sordo contra su armadura. Apenas lo mueve, pero la vibración le recorre los huesos.",
+          "dano": 1,
+          "efectos": ""
+        },
+        "B": {
+          "texto": "El impacto en el hombro le adormece el brazo. Levanta el arma como si pesara el doble.",
+          "dano": 3,
+          "efectos": "Desventaja en su próximo ataque"
+        },
+        "C": {
+          "texto": "Le hundís el arma en el estómago. Se dobla con un gemido y queda sin reacción.",
+          "dano": 5,
+          "efectos": "Pierde su reacción"
+        },
+        "D": {
+          "texto": "Un golpe seco a la cadera lo hace trastabillar hacia atrás, buscando el equilibrio perdido.",
+          "dano": 7,
+          "efectos": "Empujado 5 pies"
+        },
+        "E": {
+          "texto": "Tu impacto al pecho le vacía los pulmones. Boquea como pez fuera del agua, aturdido.",
+          "dano": 9,
+          "efectos": "Aturdido 1 ronda"
+        }
+      },
+      {
+        "min": 11,
+        "max": 25,
+        "A": {
+          "texto": "El metal de la hombrera se abolla hacia adentro y le muerde la carne con cada movimiento.",
+          "dano": 2,
+          "efectos": "CA -1 hasta reajustar"
+        },
+        "B": {
+          "texto": "Tu golpe encuentra la rodilla. La articulación se dobla en un ángulo que no debería y casi cae.",
+          "dano": 4,
+          "efectos": "Velocidad a la mitad 1 ronda"
+        },
+        "C": {
+          "texto": "Le das en la mandíbula. Escupe sangre y un diente que rebota en el suelo como un dado.",
+          "dano": 6,
+          "efectos": "Desventaja en su próximo ataque"
+        },
+        "D": {
+          "texto": "Aplastás su escudo contra su propio cuerpo y lo empujás hacia atrás como a un muñeco.",
+          "dano": 8,
+          "efectos": "Sin escudo 1 ronda; empujado 5 pies"
+        },
+        "E": {
+          "texto": "Un golpe a la sien que le apaga los ojos un instante. Se tambalea, perdido en la neblina.",
+          "dano": 10,
+          "efectos": "Aturdido 1 ronda"
+        }
+      },
+      {
+        "min": 26,
+        "max": 40,
+        "A": {
+          "texto": "Tu arma cae sobre sus nudillos con un crujido. Lucha por no soltar lo que sostiene.",
+          "dano": 3,
+          "efectos": "Salvación FUE CD 12 o desarmado"
+        },
+        "B": {
+          "texto": "Un impacto al costado; algo cruje adentro. Respira entrecortado, cada aliento una puñalada.",
+          "dano": 5,
+          "efectos": "Desventaja en ataques 1 ronda"
+        },
+        "C": {
+          "texto": "Le aplastás el pie contra el suelo. Salta en una pierna, incapaz de moverse del lugar.",
+          "dano": 7,
+          "efectos": "Velocidad 0 1 ronda"
+        },
+        "D": {
+          "texto": "El golpe le traba la rodilla y lo derriba como a un saco de grano.",
+          "dano": 9,
+          "efectos": "Derribado"
+        },
+        "E": {
+          "texto": "Escuchás el crujido de dos costillas al quebrarse. Se queda sin aire y sin fuerzas.",
+          "dano": 11,
+          "efectos": "Aturdido 1 ronda; desventaja en FUE y DES 1 minuto"
+        }
+      },
+      {
+        "min": 41,
+        "max": 55,
+        "A": {
+          "texto": "Tu golpe le tuerce el yelmo sobre los ojos. Lanza golpes a ciegas, maldiciendo.",
+          "dano": 4,
+          "efectos": "Cegado hasta acomodarlo (acción)"
+        },
+        "B": {
+          "texto": "Un impacto al codo le adormece el brazo entero. El arma cae de dedos que ya no responden.",
+          "dano": 6,
+          "efectos": "Desarmado"
+        },
+        "C": {
+          "texto": "Le aplastás la nariz contra la cara. La sangre le inunda la boca y la vista se le nubla de lágrimas.",
+          "dano": 8,
+          "efectos": "Desventaja en ataques 2 rondas"
+        },
+        "D": {
+          "texto": "Un golpe brutal en la espalda lo arroja de cara contra el suelo.",
+          "dano": 10,
+          "efectos": "Derribado; pierde su reacción"
+        },
+        "E": {
+          "texto": "El hombro se le sale de lugar con un crujido nauseabundo. Grita, con el brazo colgando sin vida.",
+          "dano": 12,
+          "efectos": "Brazo inútil hasta curación; aturdido 1 ronda"
+        }
+      },
+      {
+        "min": 56,
+        "max": 70,
+        "A": {
+          "texto": "Tu golpe al plexo lo deja sin aire. Se queda congelado, tratando de recordar cómo respirar.",
+          "dano": 5,
+          "efectos": "Aturdido 1 ronda"
+        },
+        "B": {
+          "texto": "La muñeca se le quiebra bajo tu impacto. El arma cae y la mano queda en un ángulo grotesco.",
+          "dano": 7,
+          "efectos": "Desarmado; desventaja con esa mano"
+        },
+        "C": {
+          "texto": "Le reventás la rodilla con un golpe que se escucha en todo el campo. Cae, y ya no se levanta como antes.",
+          "dano": 9,
+          "efectos": "Derribado; velocidad a la mitad hasta curación"
+        },
+        "D": {
+          "texto": "Un golpe certero a la nuca. Se desploma como una marioneta a la que le cortaron los hilos.",
+          "dano": 11,
+          "efectos": "Inconsciente 1 ronda"
+        },
+        "E": {
+          "texto": "Le partís la mandíbula. Ya no podrá hablar, ni gritar, ni pronunciar una sola palabra arcana.",
+          "dano": 13,
+          "efectos": "Sin conjuros V hasta curación; aturdido 1 ronda"
+        }
+      },
+      {
+        "min": 71,
+        "max": 85,
+        "A": {
+          "texto": "Tu golpe es tan violento que lo hace girar sobre sí mismo y lo arroja varios metros.",
+          "dano": 6,
+          "efectos": "Aturdido 1 ronda; empujado 10 pies"
+        },
+        "B": {
+          "texto": "La clavícula se le parte con un chasquido seco. Su brazo cae inútil y el arma con él.",
+          "dano": 8,
+          "efectos": "Brazo inútil; desarmado"
+        },
+        "C": {
+          "texto": "El impacto le quiebra el fémur. El hueso cede y el enemigo se derrumba, incapaz de moverse.",
+          "dano": 10,
+          "efectos": "Derribado; velocidad 0 hasta curación"
+        },
+        "D": {
+          "texto": "Tu golpe hunde el yelmo contra su cráneo. Cae inconsciente, el metal deformado sobre la cabeza.",
+          "dano": 12,
+          "efectos": "Inconsciente 1d4 rondas"
+        },
+        "E": {
+          "texto": "Le hundís el pecho con un golpe atronador. Escupe sangre y se sostiene apenas, al borde del abismo.",
+          "dano": 14,
+          "efectos": "Aturdido 2 rondas; sangrado interno 1d6"
+        }
+      },
+      {
+        "min": 86,
+        "max": 95,
+        "A": {
+          "texto": "El impacto lo levanta del suelo y lo deja caer como un costal de piedras.",
+          "dano": 7,
+          "efectos": "Derribado; empujado 10 pies"
+        },
+        "B": {
+          "texto": "Le destrozás la pelvis. Se arrastra por el suelo, incapaz de ponerse de pie.",
+          "dano": 9,
+          "efectos": "Derribado; velocidad 0"
+        },
+        "C": {
+          "texto": "Tu golpe le fisura el cráneo. Los ojos se le ponen en blanco y cae sin sentido.",
+          "dano": 11,
+          "efectos": "Inconsciente 1 minuto"
+        },
+        "D": {
+          "texto": "Algo se quiebra en su espalda con un sonido terrible. Su cuerpo deja de obedecerle.",
+          "dano": 13,
+          "efectos": "Paralizado 1 minuto"
+        },
+        "E": {
+          "texto": "Tu arma le aplasta la garganta. Se lleva las manos al cuello, sin poder tomar aire; le quedan instantes.",
+          "dano": 15,
+          "efectos": "Muere en 1d4 rondas"
+        }
+      },
+      {
+        "min": 96,
+        "max": 100,
+        "A": {
+          "texto": "Tu golpe hace estallar su escudo en una lluvia de astillas y lo deja aturdido entre los restos.",
+          "dano": 8,
+          "efectos": "Escudo destruido; aturdido 1 ronda"
+        },
+        "B": {
+          "texto": "Un barrido salvaje le quiebra ambas piernas. Cae y sabe que jamás volverá a caminar sin un milagro.",
+          "dano": 10,
+          "efectos": "Derribado; velocidad 0 permanente sin curación mágica"
+        },
+        "C": {
+          "texto": "Le hundís el costado hasta reventar lo que hay adentro. Se desploma inconsciente, sangrando por dentro.",
+          "dano": 12,
+          "efectos": "Inconsciente; sangrado interno 2d6"
+        },
+        "D": {
+          "texto": "Tu golpe le parte el cráneo. Cae y no se mueve; la vida lo abandonará antes de que termine el instante.",
+          "dano": 14,
+          "efectos": "Muere al final de su próximo turno"
+        },
+        "E": {
+          "texto": "Le revientas la cabeza como un melón maduro. El cuerpo se queda de pie un segundo antes de desplomarse.",
+          "dano": 16,
+          "efectos": "Muerte instantánea"
+        }
+      },
+      {
+        "min": 101,
+        "max": 125,
+        "A": {
+          "texto": "Lo mandás a volar contra lo más cercano. El impacto lo deja tirado, aturdido y quebrado.",
+          "dano": 9,
+          "efectos": "Empujado 15 pies; derribado; aturdido 1 ronda"
+        },
+        "B": {
+          "texto": "Escuchás cómo su columna se parte en dos. Queda tendido, consciente, pero sin poder mover las piernas.",
+          "dano": 11,
+          "efectos": "Paralizado permanente sin curación mágica"
+        },
+        "C": {
+          "texto": "Le hundís el pecho y las costillas atraviesan los pulmones. Agoniza, ahogándose en su propia sangre.",
+          "dano": 13,
+          "efectos": "Muere en 1d4 rondas"
+        },
+        "D": {
+          "texto": "Tu golpe hace girar su cabeza en un ángulo imposible. Cae como un muñeco roto.",
+          "dano": 15,
+          "efectos": "Muerte instantánea"
+        },
+        "E": {
+          "texto": "Lo reducís a una masa irreconocible de carne y metal. Ni su madre podría reconocerlo.",
+          "dano": 17,
+          "efectos": "Muerte instantánea"
+        }
+      },
+      {
+        "min": 126,
+        "max": 999,
+        "A": {
+          "texto": "Un golpe que retumba en todo el campo de batalla. Sus aliados se paralizan del miedo.",
+          "dano": 10,
+          "efectos": "Aturdido 2 rondas; aliados del enemigo asustados 1 ronda"
+        },
+        "B": {
+          "texto": "Le destrozás todo un costado del cuerpo. Cae inconsciente, sangrando por dentro.",
+          "dano": 12,
+          "efectos": "Inconsciente; sangrado interno 2d6"
+        },
+        "C": {
+          "texto": "Le hundís el cráneo hasta los ojos. Muere sin entender qué lo golpeó.",
+          "dano": 14,
+          "efectos": "Muerte instantánea"
+        },
+        "D": {
+          "texto": "Lo clavás en el suelo de un solo golpe, como un martillo divino hundiendo una estaca.",
+          "dano": 16,
+          "efectos": "Muerte instantánea"
+        },
+        "E": {
+          "texto": "Estalla en una lluvia de hueso, sangre y metal. Quienes lo presenciaron nunca lo olvidarán… ni dormirán tranquilos.",
+          "dano": 18,
+          "efectos": "Muerte instantánea; enemigos a 30 pies: salvación SAB CD 15 o asustados"
+        }
+      }
+    ]
+  },
+  "perforacion": {
+    "label": "Perforación",
+    "tipo": "critico",
+    "filas": [
+      {
+        "min": 1,
+        "max": 10,
+        "A": {
+          "texto": "Tu punta resbala sobre una hebilla con un chirrido metálico. Fallo por un suspiro.",
+          "dano": 1,
+          "efectos": ""
+        },
+        "B": {
+          "texto": "Un pinchazo en el brazo. Superficial, pero le recuerda lo cerca que estuvo.",
+          "dano": 3,
+          "efectos": "Desventaja en su próximo ataque"
+        },
+        "C": {
+          "texto": "Tu estocada entra en el muslo, poco profunda. Retrocede con cautela.",
+          "dano": 5,
+          "efectos": "Velocidad -10 pies 1 ronda"
+        },
+        "D": {
+          "texto": "Atravesás su mano libre de lado a lado. La mira con horror, incapaz de usarla.",
+          "dano": 7,
+          "efectos": "No puede usar esa mano 1 ronda"
+        },
+        "E": {
+          "texto": "Tu estocada al hombro lo hace girar sobre sí mismo, aturdido por el dolor.",
+          "dano": 9,
+          "efectos": "Aturdido 1 ronda"
+        }
+      },
+      {
+        "min": 11,
+        "max": 25,
+        "A": {
+          "texto": "Tu punta perfora la manga y le araña la piel. Un aviso de muerte.",
+          "dano": 2,
+          "efectos": ""
+        },
+        "B": {
+          "texto": "Un pinchazo certero en el pie lo clava al suelo un instante.",
+          "dano": 4,
+          "efectos": "Velocidad 0 1 ronda"
+        },
+        "C": {
+          "texto": "Tu estocada se cuela entre sus costillas. No es profunda, pero sangra sin pausa.",
+          "dano": 6,
+          "efectos": "Sangrado 1d4"
+        },
+        "D": {
+          "texto": "Atravesás la pantorrilla de lado a lado. Cojea, dejando un rastro rojo.",
+          "dano": 8,
+          "efectos": "Velocidad a la mitad; sangrado 1d4"
+        },
+        "E": {
+          "texto": "Perforás su costado con un golpe rápido. Un grito ahogado escapa de su boca.",
+          "dano": 10,
+          "efectos": "Aturdido 1 ronda; sangrado 1d4"
+        }
+      },
+      {
+        "min": 26,
+        "max": 40,
+        "A": {
+          "texto": "Tu punta encuentra la juntura de su armadura. Ahora sabe que tiene un punto débil… y vos también.",
+          "dano": 3,
+          "efectos": "CA -1 hasta salir de la pelea"
+        },
+        "B": {
+          "texto": "Pinchás el antebrazo del arma. Los dedos se le aflojan peligrosamente.",
+          "dano": 5,
+          "efectos": "Salvación FUE CD 12 o desarmado"
+        },
+        "C": {
+          "texto": "Tu estocada a la cadera le rompe el paso. Pierde el equilibrio y cae.",
+          "dano": 7,
+          "efectos": "Derribado"
+        },
+        "D": {
+          "texto": "Atravesás el bíceps. El brazo le cuelga, temblando, inútil.",
+          "dano": 9,
+          "efectos": "Brazo inútil 1 minuto"
+        },
+        "E": {
+          "texto": "Tu estocada atraviesa el abdomen; la punta asoma por la espalda. Se queda rígido, sin aire.",
+          "dano": 11,
+          "efectos": "Aturdido 1 ronda; sangrado 1d6"
+        }
+      },
+      {
+        "min": 41,
+        "max": 55,
+        "A": {
+          "texto": "Tu punta le raya la cara. Se cubre los ojos instintivamente, ciego por el pánico.",
+          "dano": 4,
+          "efectos": "Cegado 1 ronda"
+        },
+        "B": {
+          "texto": "Estocada baja que lo dobla en dos. Se queda sin aliento, temblando.",
+          "dano": 6,
+          "efectos": "Aturdido 1 ronda"
+        },
+        "C": {
+          "texto": "Le clavás el pie contra el suelo. Grita, atrapado como una presa en una trampa.",
+          "dano": 8,
+          "efectos": "Velocidad 0 hasta liberarse (acción, 1d4 daño)"
+        },
+        "D": {
+          "texto": "Perforás su pulmón. Cada respiración burbujea con sangre, cada movimiento es una agonía.",
+          "dano": 10,
+          "efectos": "Desventaja en todo 1 minuto; sangrado 1d4"
+        },
+        "E": {
+          "texto": "Tu punta encuentra su ojo. Lo pierde para siempre en un estallido de dolor.",
+          "dano": 12,
+          "efectos": "Cegado 1 ronda; ciego de un ojo permanente"
+        }
+      },
+      {
+        "min": 56,
+        "max": 70,
+        "A": {
+          "texto": "Tu estocada al hombro lo empuja hacia atrás y le roba la reacción.",
+          "dano": 5,
+          "efectos": "Empujado 5 pies; pierde reacción"
+        },
+        "B": {
+          "texto": "Atravesás la mano del arma. Suelta todo, mirando el agujero en su palma.",
+          "dano": 7,
+          "efectos": "Desarmado; sangrado 1d4"
+        },
+        "C": {
+          "texto": "Perforás el riñón. El dolor es tan intenso que se queda congelado, sin poder gritar.",
+          "dano": 9,
+          "efectos": "Aturdido 2 rondas"
+        },
+        "D": {
+          "texto": "Tu punta entra detrás de la rodilla y corta todo lo que encuentra. Cae para no levantarse.",
+          "dano": 11,
+          "efectos": "Derribado; velocidad 0 hasta curación"
+        },
+        "E": {
+          "texto": "Atravesás el cuello de lado a lado, a un dedo de la arteria. Vive… por ahora, mudo y sangrando.",
+          "dano": 13,
+          "efectos": "Aturdido 1 ronda; sangrado 2d4; sin hablar"
+        }
+      },
+      {
+        "min": 71,
+        "max": 85,
+        "A": {
+          "texto": "Tu punta perfora el muslo y encuentra la arteria. La sangre brota a borbotones.",
+          "dano": 6,
+          "efectos": "Sangrado 1d8"
+        },
+        "B": {
+          "texto": "Atravesás su vientre de lado a lado. Se queda ensartado un instante antes de que retires el arma.",
+          "dano": 8,
+          "efectos": "Aturdido 1 ronda; sangrado 1d6"
+        },
+        "C": {
+          "texto": "Perforás el hígado. Se dobla de dolor, con la cara blanca como la cera.",
+          "dano": 10,
+          "efectos": "Aturdido 2 rondas; sangrado 1d6"
+        },
+        "D": {
+          "texto": "Tu estocada atraviesa el brazo y lo clava contra su propio torso. Ninguno de sus brazos responde.",
+          "dano": 12,
+          "efectos": "Ambos brazos inútiles hasta sacar el arma"
+        },
+        "E": {
+          "texto": "Tu punta busca el corazón y una costilla la desvía en el último instante. Cae desmayado, sangrando.",
+          "dano": 14,
+          "efectos": "Inconsciente 1d4 rondas; sangrado 1d8"
+        }
+      },
+      {
+        "min": 86,
+        "max": 95,
+        "A": {
+          "texto": "Perforás la axila y el brazo se apaga como una vela.",
+          "dano": 7,
+          "efectos": "Brazo inútil; desarmado"
+        },
+        "B": {
+          "texto": "Tu estocada le atraviesa el pulmón. Queda mudo, aturdido, ahogándose despacio.",
+          "dano": 9,
+          "efectos": "Aturdido 2 rondas; sin conjuros V"
+        },
+        "C": {
+          "texto": "Atravesás su garganta. Cae de rodillas, con las manos en el cuello; le queda poco.",
+          "dano": 11,
+          "efectos": "Muere en 1d6 rondas"
+        },
+        "D": {
+          "texto": "Tu punta entra por el ojo y llega al cerebro. Se desploma, y la vida se le escapa en segundos.",
+          "dano": 13,
+          "efectos": "Inconsciente; muere en 1d4 rondas"
+        },
+        "E": {
+          "texto": "Una estocada perfecta al corazón. Cae sin emitir un solo sonido.",
+          "dano": 15,
+          "efectos": "Muerte instantánea"
+        }
+      },
+      {
+        "min": 96,
+        "max": 100,
+        "A": {
+          "texto": "Lo empalás y lo empujás hacia atrás, derribándolo con tu arma aún clavada.",
+          "dano": 8,
+          "efectos": "Empujado 10 pies; derribado; sangrado 1d6"
+        },
+        "B": {
+          "texto": "Perforás ambos pulmones de un golpe. Agoniza, buscando un aire que nunca llega.",
+          "dano": 10,
+          "efectos": "Muere en 1d6 rondas"
+        },
+        "C": {
+          "texto": "Tu punta atraviesa la columna. Cae paralizado, consciente de todo, incapaz de nada.",
+          "dano": 12,
+          "efectos": "Paralizado permanente sin curación mágica"
+        },
+        "D": {
+          "texto": "Tu estocada entra por la boca y sale por la nuca. Muere con los ojos abiertos.",
+          "dano": 14,
+          "efectos": "Muerte instantánea"
+        },
+        "E": {
+          "texto": "Atravesás su corazón de lado a lado. Te mira un segundo, sorprendido, y cae.",
+          "dano": 16,
+          "efectos": "Muerte instantánea"
+        }
+      },
+      {
+        "min": 101,
+        "max": 125,
+        "A": {
+          "texto": "Atravesás la pierna y lo clavás al suelo como un insecto en una colección.",
+          "dano": 9,
+          "efectos": "Velocidad 0; derribado; sangrado 1d8"
+        },
+        "B": {
+          "texto": "Tu punta entra por la sien. Cae inconsciente; no despertará.",
+          "dano": 11,
+          "efectos": "Inconsciente; muere en 1d4 rondas"
+        },
+        "C": {
+          "texto": "Lo empalás contra la pared más cercana. Queda colgando, agonizando.",
+          "dano": 13,
+          "efectos": "Restringido; muere en 1d4 rondas"
+        },
+        "D": {
+          "texto": "Tu estocada atraviesa el cráneo de ojo a nuca. Muere antes de tocar el suelo.",
+          "dano": 15,
+          "efectos": "Muerte instantánea"
+        },
+        "E": {
+          "texto": "Lo ensartás como a un cerdo en un asador. Queda colgando de tu arma, sin vida.",
+          "dano": 17,
+          "efectos": "Muerte instantánea"
+        }
+      },
+      {
+        "min": 126,
+        "max": 999,
+        "A": {
+          "texto": "Una estocada perfecta que lo atraviesa y sigue de largo. Agoniza sin remedio.",
+          "dano": 10,
+          "efectos": "Muere en 1d4 rondas"
+        },
+        "B": {
+          "texto": "Corazón y pulmón de un solo golpe. Muere al instante.",
+          "dano": 12,
+          "efectos": "Muerte instantánea"
+        },
+        "C": {
+          "texto": "Tu punta atraviesa su cabeza de sien a sien. Cae como una estatua derribada.",
+          "dano": 14,
+          "efectos": "Muerte instantánea"
+        },
+        "D": {
+          "texto": "Lo ensartás y lo levantás del suelo, alzándolo como un trofeo ante sus aliados.",
+          "dano": 16,
+          "efectos": "Muerte instantánea"
+        },
+        "E": {
+          "texto": "Tu estocada lo atraviesa a él y a quien esté detrás. Dos vidas en un solo golpe legendario.",
+          "dano": 18,
+          "efectos": "Muerte instantánea; criatura detrás recibe el ataque"
+        }
+      }
+    ]
+  },
+  "calor": {
+    "label": "Calor",
+    "tipo": "critico",
+    "filas": [
+      {
+        "min": 1,
+        "max": 10,
+        "A": {
+          "texto": "Una oleada de calor lo hace retroceder. Siente el beso del infierno en la piel.",
+          "dano": 1,
+          "efectos": ""
+        },
+        "B": {
+          "texto": "Las llamas le chamuscan la ropa. El olor a pelo quemado lo distrae y desconcentra.",
+          "dano": 3,
+          "efectos": "Desventaja en su próximo ataque"
+        },
+        "C": {
+          "texto": "El fuego le muerde el brazo. Se lo agarra con un gemido, olvidando defenderse.",
+          "dano": 5,
+          "efectos": "Pierde su reacción"
+        },
+        "D": {
+          "texto": "Las llamas le lamen la cara. Se cubre los ojos, ciego por el resplandor.",
+          "dano": 7,
+          "efectos": "Cegado 1 ronda"
+        },
+        "E": {
+          "texto": "Su ropa se enciende como yesca. Grita, envuelto en llamas danzantes.",
+          "dano": 9,
+          "efectos": "En llamas: 1d6 por turno hasta apagarse (acción)"
+        }
+      },
+      {
+        "min": 11,
+        "max": 25,
+        "A": {
+          "texto": "Las ampollas brotan en sus manos. Cada intento de agarrar el arma es una tortura.",
+          "dano": 2,
+          "efectos": "Desventaja en ataques 1 ronda"
+        },
+        "B": {
+          "texto": "El fuego le quema las cejas y le llena los ojos de lágrimas ardientes.",
+          "dano": 4,
+          "efectos": "Cegado 1 ronda"
+        },
+        "C": {
+          "texto": "Su escudo se pone al rojo vivo. Lo suelta con un alarido, la mano humeante.",
+          "dano": 6,
+          "efectos": "Sin escudo"
+        },
+        "D": {
+          "texto": "Las llamas le muerden la pierna. Cojea, dejando un rastro de humo.",
+          "dano": 8,
+          "efectos": "Velocidad a la mitad 2 rondas"
+        },
+        "E": {
+          "texto": "Su cabello arde como una antorcha. Grita aterrado, golpeándose la cabeza.",
+          "dano": 10,
+          "efectos": "En llamas 1d4; asustado 1 ronda"
+        }
+      },
+      {
+        "min": 26,
+        "max": 40,
+        "A": {
+          "texto": "Respira fuego. Sus pulmones arden y se queda sin aire, aturdido.",
+          "dano": 3,
+          "efectos": "Aturdido 1 ronda"
+        },
+        "B": {
+          "texto": "El metal de su armadura se calienta contra la piel. Lo está cocinando vivo.",
+          "dano": 5,
+          "efectos": "1d4 por turno hasta sacarla"
+        },
+        "C": {
+          "texto": "Su arma se pone al rojo y le quema la mano. La suelta con un grito.",
+          "dano": 7,
+          "efectos": "Desarmado"
+        },
+        "D": {
+          "texto": "Una quemadura profunda en el torso. El dolor lo deja paralizado.",
+          "dano": 9,
+          "efectos": "Aturdido 1 ronda; 1d4 por turno 2 turnos"
+        },
+        "E": {
+          "texto": "Por un instante, todo su cuerpo queda envuelto en fuego. Emerge aturdido y humeante.",
+          "dano": 11,
+          "efectos": "En llamas 1d6; aturdido 1 ronda"
+        }
+      },
+      {
+        "min": 41,
+        "max": 55,
+        "A": {
+          "texto": "Se arroja al suelo para apagar las llamas, revolcándose desesperado.",
+          "dano": 4,
+          "efectos": "Derribado"
+        },
+        "B": {
+          "texto": "Ambos brazos le arden. Cada movimiento es una agonía.",
+          "dano": 6,
+          "efectos": "Desventaja en ataques 1 minuto"
+        },
+        "C": {
+          "texto": "Un destello de fuego lo deja ciego. Tantea el aire, perdido.",
+          "dano": 8,
+          "efectos": "Cegado 2 rondas"
+        },
+        "D": {
+          "texto": "La piel de su cara se ampolla y burbujea. El terror se apodera de él.",
+          "dano": 10,
+          "efectos": "Cegado 1 ronda; asustado 1 ronda"
+        },
+        "E": {
+          "texto": "Todo su equipo inflamable arde. Mochila, pergaminos, capa: todo se vuelve ceniza.",
+          "dano": 12,
+          "efectos": "En llamas 1d8; objetos de papel/tela destruidos"
+        }
+      },
+      {
+        "min": 56,
+        "max": 70,
+        "A": {
+          "texto": "Grita y corre en pánico, olvidando el combate.",
+          "dano": 5,
+          "efectos": "Asustado 1 ronda"
+        },
+        "B": {
+          "texto": "Le quemás la mano hasta el hueso. Ya no podrá usarla sin un milagro.",
+          "dano": 7,
+          "efectos": "Desarmado; mano inútil hasta curación"
+        },
+        "C": {
+          "texto": "Una quemadura en el cuello le impide girar la cabeza. Pelea rígido, vulnerable.",
+          "dano": 9,
+          "efectos": "Desventaja en Percepción y ataques 1 minuto"
+        },
+        "D": {
+          "texto": "El calor le cocina la piel bajo la armadura. Se tambalea, aturdido.",
+          "dano": 11,
+          "efectos": "Aturdido 2 rondas"
+        },
+        "E": {
+          "texto": "El fuego le quema los ojos. Queda ciego, gritando en la oscuridad.",
+          "dano": 13,
+          "efectos": "Cegado hasta curación (3+ nivel)"
+        }
+      },
+      {
+        "min": 71,
+        "max": 85,
+        "A": {
+          "texto": "Una explosión de calor lo arroja al suelo, aturdido entre humo y chispas.",
+          "dano": 6,
+          "efectos": "Derribado; aturdido 1 ronda"
+        },
+        "B": {
+          "texto": "Su pierna se carboniza hasta la rodilla. Nunca volverá a caminar igual.",
+          "dano": 8,
+          "efectos": "Velocidad a la mitad permanente sin curación"
+        },
+        "C": {
+          "texto": "Respira las llamas y sus pulmones se queman por dentro. Queda mudo, aturdido.",
+          "dano": 10,
+          "efectos": "Aturdido 2 rondas; sin conjuros V"
+        },
+        "D": {
+          "texto": "Se convierte en una antorcha humana. Sus gritos llenan el aire.",
+          "dano": 12,
+          "efectos": "En llamas 2d6; asustado"
+        },
+        "E": {
+          "texto": "Su rostro se derrite bajo el fuego. Cae inconsciente, aún ardiendo.",
+          "dano": 14,
+          "efectos": "Inconsciente; en llamas 1d6"
+        }
+      },
+      {
+        "min": 86,
+        "max": 95,
+        "A": {
+          "texto": "Su armadura se funde con su piel. Atrapado en una prisión de metal ardiente.",
+          "dano": 7,
+          "efectos": "Restringido 1 ronda; 1d6 por turno"
+        },
+        "B": {
+          "texto": "Su brazo se carboniza hasta el hombro. Se desprende como una rama seca.",
+          "dano": 9,
+          "efectos": "Pierde el brazo"
+        },
+        "C": {
+          "texto": "Se derrumba entre humo y gritos, inconsciente y aún en llamas.",
+          "dano": 11,
+          "efectos": "Inconsciente; en llamas 1d6"
+        },
+        "D": {
+          "texto": "Humo sale de su boca y sus ojos. Se está quemando por dentro.",
+          "dano": 13,
+          "efectos": "Muere en 1d4 rondas"
+        },
+        "E": {
+          "texto": "Queda reducido a carbón. Sólo una silueta negra marca dónde estuvo.",
+          "dano": 15,
+          "efectos": "Muerte instantánea"
+        }
+      },
+      {
+        "min": 96,
+        "max": 100,
+        "A": {
+          "texto": "Una llamarada lo envuelve de pies a cabeza. Arde como una pira funeraria.",
+          "dano": 8,
+          "efectos": "En llamas 2d6; aturdido 1 ronda"
+        },
+        "B": {
+          "texto": "Lo cocinás dentro de su propia armadura. Cae inconsciente, aún humeando.",
+          "dano": 10,
+          "efectos": "Inconsciente; 1d6 por turno"
+        },
+        "C": {
+          "texto": "Su torso se carboniza. Agoniza entre llamas.",
+          "dano": 12,
+          "efectos": "Muere en 1d4 rondas"
+        },
+        "D": {
+          "texto": "Cae como una estatua humeante, inmóvil para siempre.",
+          "dano": 14,
+          "efectos": "Muerte instantánea"
+        },
+        "E": {
+          "texto": "Estalla en una explosión de ceniza y chispas que ilumina el campo.",
+          "dano": 16,
+          "efectos": "Muerte instantánea"
+        }
+      },
+      {
+        "min": 101,
+        "max": 125,
+        "A": {
+          "texto": "Una ola de fuego lo arrastra varios metros, envuelto en llamas.",
+          "dano": 9,
+          "efectos": "Empujado 15 pies; en llamas 2d6"
+        },
+        "B": {
+          "texto": "Ciego, sordo y en llamas. Un infierno personal.",
+          "dano": 11,
+          "efectos": "Cegado; ensordecido; en llamas 2d6"
+        },
+        "C": {
+          "texto": "Carbonizado de la cintura para arriba. Muere en el acto.",
+          "dano": 13,
+          "efectos": "Muerte instantánea"
+        },
+        "D": {
+          "texto": "Sólo queda una silueta negra en el suelo, quemada en la piedra.",
+          "dano": 15,
+          "efectos": "Muerte instantánea"
+        },
+        "E": {
+          "texto": "Se convierte en ceniza que el viento dispersa. Ni su equipo sobrevive.",
+          "dano": 17,
+          "efectos": "Muerte instantánea; equipo no mágico destruido"
+        }
+      },
+      {
+        "min": 126,
+        "max": 999,
+        "A": {
+          "texto": "El fuego lo envuelve y salta a todos los que están cerca. Un infierno contagioso.",
+          "dano": 10,
+          "efectos": "En llamas 2d6; criaturas a 5 pies: 1d6 fuego"
+        },
+        "B": {
+          "texto": "Combustión interna. Grita sin voz mientras se consume desde adentro.",
+          "dano": 12,
+          "efectos": "Muerte instantánea"
+        },
+        "C": {
+          "texto": "Desaparece en una columna de fuego que se eleva al cielo.",
+          "dano": 14,
+          "efectos": "Muerte instantánea"
+        },
+        "D": {
+          "texto": "Estalla en llamas y todo a su alrededor arde con él.",
+          "dano": 16,
+          "efectos": "Muerte instantánea; 2d6 fuego en 10 pies"
+        },
+        "E": {
+          "texto": "Vaporizado en un estallido de fuego. El olor a azufre perdurará por horas, y sus aliados huyen aterrados.",
+          "dano": 18,
+          "efectos": "Muerte instantánea; enemigos a 30 pies: SAB CD 15 o asustados"
+        }
+      }
+    ]
+  },
+  "frio": {
+    "label": "Frío",
+    "tipo": "critico",
+    "filas": [
+      {
+        "min": 1,
+        "max": 10,
+        "A": {
+          "texto": "Un escalofrío le recorre la espalda. Siente el aliento del invierno eterno.",
+          "dano": 1,
+          "efectos": ""
+        },
+        "B": {
+          "texto": "La escarcha cubre sus dedos. El arma le pesa como hielo.",
+          "dano": 3,
+          "efectos": "Desventaja en su próximo ataque"
+        },
+        "C": {
+          "texto": "Sus piernas tiemblan de frío. Cada paso es un esfuerzo.",
+          "dano": 5,
+          "efectos": "Velocidad -10 pies 1 ronda"
+        },
+        "D": {
+          "texto": "Su aliento se congela en el aire. Jadea, buscando calor.",
+          "dano": 7,
+          "efectos": "Pierde su reacción"
+        },
+        "E": {
+          "texto": "El hielo se mete en sus articulaciones. Se mueve como un anciano.",
+          "dano": 9,
+          "efectos": "Velocidad a la mitad 2 rondas"
+        }
+      },
+      {
+        "min": 11,
+        "max": 25,
+        "A": {
+          "texto": "La escarcha cubre sus ojos. Ve el mundo a través de un velo blanco.",
+          "dano": 2,
+          "efectos": "Cegado 1 ronda"
+        },
+        "B": {
+          "texto": "Sus manos se entumecen hasta no sentirlas. Lucha por no soltar el arma.",
+          "dano": 4,
+          "efectos": "Salvación FUE CD 12 o desarmado"
+        },
+        "C": {
+          "texto": "El suelo se congela bajo sus pies. Resbala y cae.",
+          "dano": 6,
+          "efectos": "Derribado"
+        },
+        "D": {
+          "texto": "La escarcha cubre su pecho y le roba el aliento.",
+          "dano": 8,
+          "efectos": "Aturdido 1 ronda"
+        },
+        "E": {
+          "texto": "Su pierna se congela hasta la rodilla. Queda clavado en el lugar.",
+          "dano": 10,
+          "efectos": "Velocidad 0 1 ronda"
+        }
+      },
+      {
+        "min": 26,
+        "max": 40,
+        "A": {
+          "texto": "Labios azules, dientes castañeteando. No puede articular palabra.",
+          "dano": 3,
+          "efectos": "Sin conjuros V 1 ronda"
+        },
+        "B": {
+          "texto": "El arma se congela en su mano. Ya no puede soltarla aunque quiera.",
+          "dano": 5,
+          "efectos": "No puede soltarla ni cambiarla 1 minuto"
+        },
+        "C": {
+          "texto": "El hielo cruje en su costado con cada movimiento. Se mueve con torpeza.",
+          "dano": 7,
+          "efectos": "Desventaja en DES 1 minuto"
+        },
+        "D": {
+          "texto": "Su brazo se congela por completo. Lo mira como si fuera ajeno.",
+          "dano": 9,
+          "efectos": "Brazo inútil 1 minuto"
+        },
+        "E": {
+          "texto": "Queda atrapado en una prisión de hielo, inmóvil.",
+          "dano": 11,
+          "efectos": "Restringido 1 ronda"
+        }
+      },
+      {
+        "min": 41,
+        "max": 55,
+        "A": {
+          "texto": "Tiembla sin control, incapaz de apuntar.",
+          "dano": 4,
+          "efectos": "Desventaja en ataques 2 rondas"
+        },
+        "B": {
+          "texto": "Sus dedos se ennegrecen por la congelación. Los perderá si no lo curan.",
+          "dano": 6,
+          "efectos": "Desventaja con esa mano hasta curación"
+        },
+        "C": {
+          "texto": "El frío le llega hasta los huesos. Se mueve lento, aturdido.",
+          "dano": 8,
+          "efectos": "Aturdido 1 ronda; velocidad a la mitad"
+        },
+        "D": {
+          "texto": "Su rostro queda cubierto de hielo. Ciego y aterrado.",
+          "dano": 10,
+          "efectos": "Cegado 2 rondas"
+        },
+        "E": {
+          "texto": "Ambas piernas se congelan al suelo. Atrapado como una estatua.",
+          "dano": 12,
+          "efectos": "Restringido 2 rondas"
+        }
+      },
+      {
+        "min": 56,
+        "max": 70,
+        "A": {
+          "texto": "La escarcha se mete en su escudo y lo hace estallar en pedazos.",
+          "dano": 5,
+          "efectos": "Sin escudo"
+        },
+        "B": {
+          "texto": "Sus orejas se congelan y una se quiebra como cristal. El mundo queda en silencio.",
+          "dano": 7,
+          "efectos": "Ensordecido 1 minuto"
+        },
+        "C": {
+          "texto": "Respira hielo. Sus pulmones arden de frío.",
+          "dano": 9,
+          "efectos": "Aturdido 2 rondas"
+        },
+        "D": {
+          "texto": "Su mano congelada se quiebra al golpearla contra algo. Cae al suelo como una piedra.",
+          "dano": 11,
+          "efectos": "Pierde la mano"
+        },
+        "E": {
+          "texto": "Su corazón se ralentiza por el frío. Cae inconsciente.",
+          "dano": 13,
+          "efectos": "Inconsciente 1d4 rondas"
+        }
+      },
+      {
+        "min": 71,
+        "max": 85,
+        "A": {
+          "texto": "Queda cubierto de hielo de pies a cabeza, una estatua viviente.",
+          "dano": 6,
+          "efectos": "Restringido 1 ronda; aturdido 1 ronda"
+        },
+        "B": {
+          "texto": "Su pie se congela y se quiebra. Nunca volverá a caminar igual.",
+          "dano": 8,
+          "efectos": "Velocidad a la mitad permanente sin curación"
+        },
+        "C": {
+          "texto": "Sus ojos se congelan. Ciego hasta que la magia lo cure.",
+          "dano": 10,
+          "efectos": "Cegado hasta curación"
+        },
+        "D": {
+          "texto": "Su brazo se rompe como cristal. Los pedazos caen tintineando.",
+          "dano": 12,
+          "efectos": "Pierde el brazo; aturdido 1 ronda"
+        },
+        "E": {
+          "texto": "Hipotermia instantánea. Cae inconsciente; sin calor, no despertará.",
+          "dano": 14,
+          "efectos": "Inconsciente; muere en 1d6 rondas sin calor"
+        }
+      },
+      {
+        "min": 86,
+        "max": 95,
+        "A": {
+          "texto": "Por un instante, queda congelado como una estatua de hielo.",
+          "dano": 7,
+          "efectos": "Paralizado 1 ronda"
+        },
+        "B": {
+          "texto": "Sus pulmones se congelan. Agoniza buscando aire.",
+          "dano": 9,
+          "efectos": "Muere en 1d6 rondas"
+        },
+        "C": {
+          "texto": "Su pierna se quiebra al dar un paso. Cae, mirando el muñón congelado.",
+          "dano": 11,
+          "efectos": "Pierde la pierna; derribado"
+        },
+        "D": {
+          "texto": "El frío lo congela por dentro. Agoniza en silencio.",
+          "dano": 13,
+          "efectos": "Muere en 1d4 rondas"
+        },
+        "E": {
+          "texto": "Se congela entero y queda quieto para siempre, un monumento al invierno.",
+          "dano": 15,
+          "efectos": "Muerte instantánea"
+        }
+      },
+      {
+        "min": 96,
+        "max": 100,
+        "A": {
+          "texto": "La escarcha lo sepulta, dejándolo inmóvil.",
+          "dano": 8,
+          "efectos": "Paralizado 2 rondas"
+        },
+        "B": {
+          "texto": "Congelado de la cintura para abajo. Agoniza atrapado.",
+          "dano": 10,
+          "efectos": "Restringido; muere en 1d6 rondas"
+        },
+        "C": {
+          "texto": "Su corazón se congela. Muere al instante.",
+          "dano": 12,
+          "efectos": "Muerte instantánea"
+        },
+        "D": {
+          "texto": "Se parte en pedazos al caer al suelo.",
+          "dano": 14,
+          "efectos": "Muerte instantánea"
+        },
+        "E": {
+          "texto": "Estalla en una lluvia de cristales de hielo.",
+          "dano": 16,
+          "efectos": "Muerte instantánea"
+        }
+      },
+      {
+        "min": 101,
+        "max": 125,
+        "A": {
+          "texto": "El hielo lo encierra por completo. Lucha por liberarse de su tumba cristalina.",
+          "dano": 9,
+          "efectos": "Paralizado 1 minuto (CD 15 FUE cada turno)"
+        },
+        "B": {
+          "texto": "Una estatua viviente que respira apenas. Le queda poco.",
+          "dano": 11,
+          "efectos": "Paralizado; muere en 1 minuto"
+        },
+        "C": {
+          "texto": "Se quiebra como vidrio, en mil pedazos.",
+          "dano": 13,
+          "efectos": "Muerte instantánea"
+        },
+        "D": {
+          "texto": "Queda congelado en pose de ataque, para siempre.",
+          "dano": 15,
+          "efectos": "Muerte instantánea"
+        },
+        "E": {
+          "texto": "Se convierte en polvo de hielo que el viento se lleva.",
+          "dano": 17,
+          "efectos": "Muerte instantánea"
+        }
+      },
+      {
+        "min": 126,
+        "max": 999,
+        "A": {
+          "texto": "Una tormenta de hielo lo envuelve a él y a todo lo que lo rodea.",
+          "dano": 10,
+          "efectos": "Paralizado 1 minuto; 5 pies alrededor terreno difícil"
+        },
+        "B": {
+          "texto": "Congelado y quebrado. Muere en el acto.",
+          "dano": 12,
+          "efectos": "Muerte instantánea"
+        },
+        "C": {
+          "texto": "Estalla en esquirlas de hielo que hieren a los cercanos.",
+          "dano": 14,
+          "efectos": "Muerte instantánea; 1d6 perforante en 10 pies"
+        },
+        "D": {
+          "texto": "Se convierte en una escultura perfecta de hielo.",
+          "dano": 16,
+          "efectos": "Muerte instantánea"
+        },
+        "E": {
+          "texto": "El frío se lleva su alma. Ni la magia común podrá traerlo de vuelta.",
+          "dano": 18,
+          "efectos": "Muerte instantánea; no puede ser revivido con magia menor a 5º nivel"
+        }
+      }
+    ]
+  },
+  "electrico": {
+    "label": "Eléctrico",
+    "tipo": "critico",
+    "filas": [
+      {
+        "min": 1,
+        "max": 10,
+        "A": {
+          "texto": "Un chispazo azul le recorre la piel y le eriza cada pelo del cuerpo. Huele a tormenta.",
+          "dano": 1,
+          "efectos": ""
+        },
+        "B": {
+          "texto": "El hormigueo le trepa por los brazos como un enjambre de hormigas de fuego. Sus golpes pierden precisión.",
+          "dano": 3,
+          "efectos": "Desventaja en su próximo ataque"
+        },
+        "C": {
+          "texto": "Un calambre feroz le muerde la pierna. Arrastra el pie como si llevara una cadena invisible.",
+          "dano": 5,
+          "efectos": "Velocidad a la mitad 1 ronda"
+        },
+        "D": {
+          "texto": "La descarga le cierra los puños con violencia y el arma salta de sus manos, chisporroteando.",
+          "dano": 7,
+          "efectos": "Desarmado"
+        },
+        "E": {
+          "texto": "Un relámpago le atraviesa el cuerpo. Convulsiona un instante, los ojos en blanco, la mandíbula trabada.",
+          "dano": 9,
+          "efectos": "Aturdido 1 ronda"
+        }
+      },
+      {
+        "min": 11,
+        "max": 25,
+        "A": {
+          "texto": "Un destello blanco le estalla frente a los ojos. Durante un latido, el mundo deja de existir.",
+          "dano": 2,
+          "efectos": "Cegado 1 ronda"
+        },
+        "B": {
+          "texto": "El metal de su armadura canta con la electricidad. Tiembla dentro de su propia coraza, sin poder reaccionar.",
+          "dano": 4,
+          "efectos": "Pierde su reacción"
+        },
+        "C": {
+          "texto": "Sus músculos se rebelan contra él. Queda suspendido en medio de un gesto, como una estatua de carne.",
+          "dano": 6,
+          "efectos": "Incapacitado 1 ronda"
+        },
+        "D": {
+          "texto": "Un arco eléctrico le perfora la palma. Suelta el arma, la mano humeando con olor a carne chamuscada.",
+          "dano": 8,
+          "efectos": "Desarmado; sangrado 1d4"
+        },
+        "E": {
+          "texto": "El rayo lo derriba entre espasmos violentos. Se retuerce en el suelo como un pez sobre la piedra.",
+          "dano": 10,
+          "efectos": "Derribado; aturdido 1 ronda"
+        }
+      },
+      {
+        "min": 26,
+        "max": 40,
+        "A": {
+          "texto": "Su corazón da un vuelco brutal. Se tambalea, pálido, con la mano en el pecho.",
+          "dano": 3,
+          "efectos": "Desventaja en todo 1 ronda"
+        },
+        "B": {
+          "texto": "Un trueno estalla dentro de su cráneo. Cuando pasa, lo único que queda es un zumbido infinito.",
+          "dano": 5,
+          "efectos": "Ensordecido 1 minuto"
+        },
+        "C": {
+          "texto": "Un arco azul danza entre su mano y su arma. No se atreve a tocarla de nuevo.",
+          "dano": 7,
+          "efectos": "Desarmado; 1d4 por turno si la levanta"
+        },
+        "D": {
+          "texto": "Cada músculo de su cuerpo se contrae a la vez. Queda rígido, atrapado en su propia carne.",
+          "dano": 9,
+          "efectos": "Restringido 1 ronda"
+        },
+        "E": {
+          "texto": "La descarga lo sacude como a un muñeco en manos de un gigante. Cuando termina, apenas sabe dónde está.",
+          "dano": 11,
+          "efectos": "Aturdido 2 rondas"
+        }
+      },
+      {
+        "min": 41,
+        "max": 55,
+        "A": {
+          "texto": "Sacude la cabeza, aturdido, con chispas aún bailando en las puntas de sus dedos.",
+          "dano": 4,
+          "efectos": "Aturdido 1 ronda"
+        },
+        "B": {
+          "texto": "Su pelo humea y se eriza como el de un gato. El terror le llena los ojos.",
+          "dano": 6,
+          "efectos": "Asustado 1 ronda"
+        },
+        "C": {
+          "texto": "Marcas ramificadas, como raíces de fuego, se dibujan sobre su piel. Aturdido, sangra por las quemaduras.",
+          "dano": 8,
+          "efectos": "Aturdido 1 ronda; sangrado 1d4"
+        },
+        "D": {
+          "texto": "Su corazón pierde el ritmo y late como un tambor enloquecido. Se aferra el pecho, sin aliento.",
+          "dano": 10,
+          "efectos": "Aturdido 2 rondas"
+        },
+        "E": {
+          "texto": "Cae fulminado y convulsiona en el suelo, cada nervio de su cuerpo gritando a la vez.",
+          "dano": 12,
+          "efectos": "Derribado; incapacitado 2 rondas"
+        }
+      },
+      {
+        "min": 56,
+        "max": 70,
+        "A": {
+          "texto": "Un resplandor blanco lo envuelve. Cuando se apaga, sus ojos ya no ven nada.",
+          "dano": 5,
+          "efectos": "Cegado 2 rondas"
+        },
+        "B": {
+          "texto": "Su brazo queda muerto, colgando, sin responder a ninguna orden.",
+          "dano": 7,
+          "efectos": "Brazo inútil 1 minuto"
+        },
+        "C": {
+          "texto": "Las piernas se le apagan como velas. Se desploma, incapaz de levantarse.",
+          "dano": 9,
+          "efectos": "Derribado; velocidad 0 1 minuto"
+        },
+        "D": {
+          "texto": "Su corazón se detiene. Un segundo eterno de silencio antes de que vuelva a latir… pero ya está en el suelo, inconsciente.",
+          "dano": 11,
+          "efectos": "Inconsciente 1 ronda"
+        },
+        "E": {
+          "texto": "El rayo lo golpea de lleno con un estruendo de tormenta. Queda aturdido, sordo, y humeando.",
+          "dano": 13,
+          "efectos": "Aturdido 2 rondas; ensordecido"
+        }
+      },
+      {
+        "min": 71,
+        "max": 85,
+        "A": {
+          "texto": "La descarga salta de su cuerpo a quien tenga al lado, como un dragón de luz buscando nuevas presas.",
+          "dano": 6,
+          "efectos": "Aturdido 1 ronda; 1d6 eléctrico a criatura adyacente"
+        },
+        "B": {
+          "texto": "La electricidad lo cocina desde adentro. Sangra por la nariz y los oídos, aturdido.",
+          "dano": 8,
+          "efectos": "Aturdido 2 rondas; sangrado 1d6"
+        },
+        "C": {
+          "texto": "El destello le quema los ojos. Queda ciego, con las cuencas humeando.",
+          "dano": 10,
+          "efectos": "Cegado hasta curación"
+        },
+        "D": {
+          "texto": "Su corazón se detiene en seco. Cae, y sólo la magia podrá traerlo de vuelta a tiempo.",
+          "dano": 12,
+          "efectos": "Inconsciente; muere en 1d4 rondas"
+        },
+        "E": {
+          "texto": "El rayo recorre su columna como una serpiente de fuego. Su cuerpo deja de obedecerle.",
+          "dano": 14,
+          "efectos": "Paralizado 1 minuto"
+        }
+      },
+      {
+        "min": 86,
+        "max": 95,
+        "A": {
+          "texto": "Humo brota de sus orejas. Cae inconsciente, con un olor a carne quemada flotando a su alrededor.",
+          "dano": 7,
+          "efectos": "Inconsciente 1d4 rondas"
+        },
+        "B": {
+          "texto": "El rayo le fríe la mente. Balbucea palabras sin sentido, la mirada perdida en el vacío.",
+          "dano": 9,
+          "efectos": "Incapacitado 1 minuto"
+        },
+        "C": {
+          "texto": "Su corazón estalla en un último latido. Agoniza, y le quedan segundos.",
+          "dano": 11,
+          "efectos": "Muere en 1d4 rondas"
+        },
+        "D": {
+          "texto": "Se quema desde adentro. Cae, y de su boca escapa un hilo de humo negro.",
+          "dano": 13,
+          "efectos": "Muerte instantánea"
+        },
+        "E": {
+          "texto": "Brilla como una lámpara divina un instante, iluminando todo el campo, y luego se apaga para siempre.",
+          "dano": 15,
+          "efectos": "Muerte instantánea"
+        }
+      },
+      {
+        "min": 96,
+        "max": 100,
+        "A": {
+          "texto": "Un arco eléctrico lo levanta del suelo y lo deja suspendido, paralizado, antes de dejarlo caer.",
+          "dano": 8,
+          "efectos": "Derribado; paralizado 1 ronda"
+        },
+        "B": {
+          "texto": "Su armadura se convierte en su tumba: el metal conduce la tormenta y lo cocina adentro.",
+          "dano": 10,
+          "efectos": "Inconsciente; 1d6 por turno"
+        },
+        "C": {
+          "texto": "Fulminado. Ni siquiera llega a gritar.",
+          "dano": 12,
+          "efectos": "Muerte instantánea"
+        },
+        "D": {
+          "texto": "Estalla en una lluvia de chispas que ilumina el campo como fuegos artificiales macabros.",
+          "dano": 14,
+          "efectos": "Muerte instantánea"
+        },
+        "E": {
+          "texto": "Carbonizado al instante. Queda de pie un momento, negro como el carbón, antes de desmoronarse.",
+          "dano": 16,
+          "efectos": "Muerte instantánea"
+        }
+      },
+      {
+        "min": 101,
+        "max": 125,
+        "A": {
+          "texto": "El rayo salta de su cuerpo a otros dos enemigos, tejiendo una red de muerte entre ellos.",
+          "dano": 9,
+          "efectos": "Paralizado 1 ronda; 2d6 eléctrico a 2 criaturas a 10 pies"
+        },
+        "B": {
+          "texto": "Su sistema nervioso se quema por completo. Muere sin entender qué pasó.",
+          "dano": 11,
+          "efectos": "Muerte instantánea"
+        },
+        "C": {
+          "texto": "Queda negro y humeante, una estatua de carbón donde antes hubo un guerrero.",
+          "dano": 13,
+          "efectos": "Muerte instantánea"
+        },
+        "D": {
+          "texto": "El rayo lo atraviesa de lado a lado, dejando un agujero que humea y brilla.",
+          "dano": 15,
+          "efectos": "Muerte instantánea"
+        },
+        "E": {
+          "texto": "Explota en un estallido de luz blanca que deja a todos parpadeando.",
+          "dano": 17,
+          "efectos": "Muerte instantánea"
+        }
+      },
+      {
+        "min": 126,
+        "max": 999,
+        "A": {
+          "texto": "Una tormenta en miniatura se desata a su alrededor, rayos cayendo de un cielo inexistente.",
+          "dano": 10,
+          "efectos": "Paralizado; 2d6 eléctrico en 10 pies"
+        },
+        "B": {
+          "texto": "Fulminado por la ira del cielo. El aire queda impregnado de ozono.",
+          "dano": 12,
+          "efectos": "Muerte instantánea"
+        },
+        "C": {
+          "texto": "Una cadena de rayos salta de su cuerpo a todos los que lo rodean.",
+          "dano": 14,
+          "efectos": "Muerte instantánea; 2d6 a todos en 15 pies"
+        },
+        "D": {
+          "texto": "Queda soldado al suelo, fundido con la piedra por la descarga.",
+          "dano": 16,
+          "efectos": "Muerte instantánea"
+        },
+        "E": {
+          "texto": "Desintegrado por un rayo que parece enviado por los dioses. Sus aliados huyen aterrados.",
+          "dano": 18,
+          "efectos": "Muerte instantánea; enemigos a 30 pies: SAB CD 15 o asustados"
+        }
+      }
+    ]
+  },
+  "impacto": {
+    "label": "Impacto",
+    "tipo": "critico",
+    "filas": [
+      {
+        "min": 1,
+        "max": 10,
+        "A": {
+          "texto": "Una onda invisible le hace zumbar los oídos, como si una campana gigante sonara a su lado.",
+          "dano": 1,
+          "efectos": ""
+        },
+        "B": {
+          "texto": "La fuerza del impacto lo empuja medio paso atrás. Sus pies arañan el suelo buscando apoyo.",
+          "dano": 3,
+          "efectos": "Empujado 5 pies"
+        },
+        "C": {
+          "texto": "El golpe retumba en su pecho como un tambor de guerra. Pierde el ritmo del combate.",
+          "dano": 5,
+          "efectos": "Pierde su reacción"
+        },
+        "D": {
+          "texto": "Una vibración profunda le sacude las piernas. Pierde el equilibrio y cae de espaldas.",
+          "dano": 7,
+          "efectos": "Derribado"
+        },
+        "E": {
+          "texto": "Un trueno estalla junto a su cabeza. Queda aturdido, mirando a la nada.",
+          "dano": 9,
+          "efectos": "Aturdido 1 ronda"
+        }
+      },
+      {
+        "min": 11,
+        "max": 25,
+        "A": {
+          "texto": "El estruendo lo deja sordo por un instante. El mundo se vuelve mudo y lejano.",
+          "dano": 2,
+          "efectos": "Ensordecido 1 ronda"
+        },
+        "B": {
+          "texto": "La onda lo hace trastabillar hacia atrás, desbaratando su ataque.",
+          "dano": 4,
+          "efectos": "Empujado 5 pies; desventaja en su ataque"
+        },
+        "C": {
+          "texto": "Un hilo de sangre le corre por las orejas. El zumbido no se irá pronto.",
+          "dano": 6,
+          "efectos": "Ensordecido 1 minuto"
+        },
+        "D": {
+          "texto": "La onda lo levanta del suelo y lo arroja varios metros atrás.",
+          "dano": 8,
+          "efectos": "Empujado 10 pies; derribado"
+        },
+        "E": {
+          "texto": "Una explosión de sonido en plena cara lo deja aturdido y sordo.",
+          "dano": 10,
+          "efectos": "Aturdido 1 ronda; ensordecido"
+        }
+      },
+      {
+        "min": 26,
+        "max": 40,
+        "A": {
+          "texto": "La vibración le recorre los brazos y le arranca el arma de las manos.",
+          "dano": 3,
+          "efectos": "Desarmado"
+        },
+        "B": {
+          "texto": "El impacto lo dobla sobre sí mismo como si un toro lo hubiera embestido.",
+          "dano": 5,
+          "efectos": "Aturdido 1 ronda"
+        },
+        "C": {
+          "texto": "Sus tímpanos estallan con un dolor agudo. Ya no escucha nada.",
+          "dano": 7,
+          "efectos": "Ensordecido hasta curación"
+        },
+        "D": {
+          "texto": "La onda lo arroja contra el suelo con violencia. Queda aturdido entre el polvo.",
+          "dano": 9,
+          "efectos": "Derribado; aturdido 1 ronda"
+        },
+        "E": {
+          "texto": "El golpe le revuelve los órganos. Vomita sangre, aturdido.",
+          "dano": 11,
+          "efectos": "Aturdido 2 rondas"
+        }
+      },
+      {
+        "min": 41,
+        "max": 55,
+        "A": {
+          "texto": "Pierde el equilibrio y cae, sintiendo el suelo vibrar bajo su espalda.",
+          "dano": 4,
+          "efectos": "Derribado"
+        },
+        "B": {
+          "texto": "La vibración le llega a los huesos. Todo su cuerpo tiembla, descoordinado.",
+          "dano": 6,
+          "efectos": "Desventaja en todo 1 ronda"
+        },
+        "C": {
+          "texto": "La onda parte su escudo en dos y lo empuja hacia atrás.",
+          "dano": 8,
+          "efectos": "Sin escudo; empujado 5 pies"
+        },
+        "D": {
+          "texto": "La fuerza lo arroja como un muñeco a varios metros de distancia.",
+          "dano": 10,
+          "efectos": "Empujado 15 pies; derribado"
+        },
+        "E": {
+          "texto": "Algo se rompe adentro. Sangra por dentro, pálido y tambaleante.",
+          "dano": 12,
+          "efectos": "Aturdido 1 ronda; sangrado 1d6"
+        }
+      },
+      {
+        "min": 56,
+        "max": 70,
+        "A": {
+          "texto": "Ve doble. Ataca a dos enemigos, y sólo uno es real.",
+          "dano": 5,
+          "efectos": "Desventaja en ataques 2 rondas"
+        },
+        "B": {
+          "texto": "La onda lo estrella contra lo más cercano. Queda aturdido entre los escombros.",
+          "dano": 7,
+          "efectos": "Empujado 10 pies; aturdido 1 ronda"
+        },
+        "C": {
+          "texto": "Sus costillas se fisuran con un crujido. Cada movimiento es un suplicio.",
+          "dano": 9,
+          "efectos": "Desventaja en FUE y DES 1 minuto"
+        },
+        "D": {
+          "texto": "Le sangran la nariz y los oídos. Se tambalea, sordo y aturdido.",
+          "dano": 11,
+          "efectos": "Aturdido 2 rondas; ensordecido"
+        },
+        "E": {
+          "texto": "Su cerebro rebota dentro del cráneo. Se desploma, inconsciente.",
+          "dano": 13,
+          "efectos": "Inconsciente 1d4 rondas"
+        }
+      },
+      {
+        "min": 71,
+        "max": 85,
+        "A": {
+          "texto": "La onda lo levanta y lo deja caer como un costal de huesos.",
+          "dano": 6,
+          "efectos": "Derribado; aturdido 1 ronda"
+        },
+        "B": {
+          "texto": "La presión le quiebra el brazo. El arma cae junto con su esperanza.",
+          "dano": 8,
+          "efectos": "Brazo inútil; desarmado"
+        },
+        "C": {
+          "texto": "Sus pulmones colapsan bajo la fuerza. Queda mudo, ahogándose.",
+          "dano": 10,
+          "efectos": "Aturdido 2 rondas; sin conjuros V"
+        },
+        "D": {
+          "texto": "Lo arroja a gran distancia. Aterriza inconsciente.",
+          "dano": 12,
+          "efectos": "Empujado 20 pies; inconsciente 1 ronda"
+        },
+        "E": {
+          "texto": "Sus órganos estallan por dentro. Agoniza en silencio.",
+          "dano": 14,
+          "efectos": "Inconsciente; muere en 1d6 rondas"
+        }
+      },
+      {
+        "min": 86,
+        "max": 95,
+        "A": {
+          "texto": "Ondas de fuerza lo paralizan. Queda inmóvil, como congelado en el tiempo.",
+          "dano": 7,
+          "efectos": "Paralizado 1 ronda"
+        },
+        "B": {
+          "texto": "Su cráneo se fisura con el impacto. Cae inconsciente.",
+          "dano": 9,
+          "efectos": "Inconsciente 1 minuto"
+        },
+        "C": {
+          "texto": "Sus huesos se quiebran en varios puntos a la vez. Queda tendido, sin poder moverse.",
+          "dano": 11,
+          "efectos": "Derribado; velocidad 0"
+        },
+        "D": {
+          "texto": "Una hemorragia en el cerebro. Sus ojos se llenan de sangre; le quedan segundos.",
+          "dano": 13,
+          "efectos": "Muere en 1d4 rondas"
+        },
+        "E": {
+          "texto": "Revienta por dentro. Muere sin una marca visible.",
+          "dano": 15,
+          "efectos": "Muerte instantánea"
+        }
+      },
+      {
+        "min": 96,
+        "max": 100,
+        "A": {
+          "texto": "Lo despide por el aire como un muñeco de trapo. Aterriza aturdido y quebrado.",
+          "dano": 8,
+          "efectos": "Empujado 30 pies; derribado; aturdido 1 ronda"
+        },
+        "B": {
+          "texto": "Su columna se fractura con el impacto. Quedará paralizado.",
+          "dano": 10,
+          "efectos": "Paralizado permanente sin curación mágica"
+        },
+        "C": {
+          "texto": "Su cabeza se sacude hasta que el cuello cede. Muere al instante.",
+          "dano": 12,
+          "efectos": "Muerte instantánea"
+        },
+        "D": {
+          "texto": "Estalla por la presión, salpicando todo a su alrededor.",
+          "dano": 14,
+          "efectos": "Muerte instantánea"
+        },
+        "E": {
+          "texto": "Pulverizado. Sólo queda polvo y metal retorcido.",
+          "dano": 16,
+          "efectos": "Muerte instantánea"
+        }
+      },
+      {
+        "min": 101,
+        "max": 125,
+        "A": {
+          "texto": "Un trueno ensordecedor sacude a todos los cercanos, que quedan sordos y aturdidos.",
+          "dano": 9,
+          "efectos": "Aturdido 1 ronda; ensordecidos en 10 pies"
+        },
+        "B": {
+          "texto": "Todo su esqueleto se quiebra a la vez. Muere en el acto.",
+          "dano": 11,
+          "efectos": "Muerte instantánea"
+        },
+        "C": {
+          "texto": "Lanzado al aire y estrellado contra el suelo. Ya no se levanta.",
+          "dano": 13,
+          "efectos": "Muerte instantánea"
+        },
+        "D": {
+          "texto": "Revienta como una fruta madura bajo el martillo de un dios.",
+          "dano": 15,
+          "efectos": "Muerte instantánea"
+        },
+        "E": {
+          "texto": "Pulverizado junto con todo su equipo. No queda nada.",
+          "dano": 17,
+          "efectos": "Muerte instantánea"
+        }
+      },
+      {
+        "min": 126,
+        "max": 999,
+        "A": {
+          "texto": "Una onda expansiva brutal derriba a todos los que lo rodean.",
+          "dano": 10,
+          "efectos": "Inconsciente; criaturas en 10 pies derribadas"
+        },
+        "B": {
+          "texto": "Destrozado por dentro. Su cuerpo se desploma como un saco vacío.",
+          "dano": 12,
+          "efectos": "Muerte instantánea"
+        },
+        "C": {
+          "texto": "Estalla y salpica todo a su alrededor con un estruendo de tormenta.",
+          "dano": 14,
+          "efectos": "Muerte instantánea"
+        },
+        "D": {
+          "texto": "Desaparece en un estruendo que hace temblar la tierra.",
+          "dano": 16,
+          "efectos": "Muerte instantánea"
+        },
+        "E": {
+          "texto": "El estruendo se escucha a kilómetros. Sus aliados huyen aterrados.",
+          "dano": 18,
+          "efectos": "Muerte instantánea; enemigos a 30 pies: SAB CD 15 o asustados"
+        }
+      }
+    ]
+  },
+  "magico": {
+    "label": "Mágico",
+    "tipo": "critico",
+    "filas": [
+      {
+        "min": 1,
+        "max": 10,
+        "A": {
+          "texto": "Un destello extraño lo desconcentra. Por un instante, ve cosas que no deberían existir.",
+          "dano": 1,
+          "efectos": ""
+        },
+        "B": {
+          "texto": "Una náusea sobrenatural le revuelve el estómago. Su ataque sale torcido.",
+          "dano": 3,
+          "efectos": "Desventaja en su próximo ataque"
+        },
+        "C": {
+          "texto": "Energía arcana le recorre el cuerpo como agua helada. Queda sin reacción.",
+          "dano": 5,
+          "efectos": "Pierde su reacción"
+        },
+        "D": {
+          "texto": "Una bruma mágica le nubla la vista. El mundo se vuelve sombras.",
+          "dano": 7,
+          "efectos": "Cegado 1 ronda"
+        },
+        "E": {
+          "texto": "Un dolor que no es de este mundo lo atraviesa. Queda aturdido, temblando.",
+          "dano": 9,
+          "efectos": "Aturdido 1 ronda"
+        }
+      },
+      {
+        "min": 11,
+        "max": 25,
+        "A": {
+          "texto": "Su mente se dispersa como humo. Pierde el hilo de cualquier conjuro que sostuviera.",
+          "dano": 2,
+          "efectos": "Pierde concentración en conjuros"
+        },
+        "B": {
+          "texto": "Siente que algo invisible le roba el aliento. Su voluntad flaquea.",
+          "dano": 4,
+          "efectos": "Desventaja en salvaciones 1 ronda"
+        },
+        "C": {
+          "texto": "Runas brillantes se graban en su piel y lo llenan de terror.",
+          "dano": 6,
+          "efectos": "Asustado 1 ronda"
+        },
+        "D": {
+          "texto": "La energía lo sacude y lo arroja al suelo.",
+          "dano": 8,
+          "efectos": "Derribado"
+        },
+        "E": {
+          "texto": "Grita sin saber por qué. Algo antiguo susurró su nombre.",
+          "dano": 10,
+          "efectos": "Aturdido 1 ronda; asustado"
+        }
+      },
+      {
+        "min": 26,
+        "max": 40,
+        "A": {
+          "texto": "La magia lo desorienta. Ataca al aire, persiguiendo sombras.",
+          "dano": 3,
+          "efectos": "Desventaja en ataques 2 rondas"
+        },
+        "B": {
+          "texto": "Su piel se corroe o se marchita bajo la energía. Sangra sin parar.",
+          "dano": 5,
+          "efectos": "Sangrado 1d4"
+        },
+        "C": {
+          "texto": "Visiones de pesadilla le llenan la mente. Ve su propia muerte una y otra vez.",
+          "dano": 7,
+          "efectos": "Asustado 1 minuto (SAB CD 13 cada turno)"
+        },
+        "D": {
+          "texto": "Una debilidad repentina le roba la fuerza de los brazos.",
+          "dano": 9,
+          "efectos": "Desventaja en FUE 1 minuto"
+        },
+        "E": {
+          "texto": "La energía lo atraviesa como una lanza de luz. Queda aturdido.",
+          "dano": 11,
+          "efectos": "Aturdido 2 rondas"
+        }
+      },
+      {
+        "min": 41,
+        "max": 55,
+        "A": {
+          "texto": "Olvida dónde está y qué estaba haciendo. Mira alrededor, perdido.",
+          "dano": 4,
+          "efectos": "Incapacitado 1 ronda"
+        },
+        "B": {
+          "texto": "Su arma se corroe y se oxida en sus manos, como si envejeciera siglos en un segundo.",
+          "dano": 6,
+          "efectos": "Arma no mágica -1 al daño permanente"
+        },
+        "C": {
+          "texto": "Una debilidad profunda se instala en sus huesos. Todo le cuesta.",
+          "dano": 8,
+          "efectos": "Desventaja en todo 1 minuto"
+        },
+        "D": {
+          "texto": "Su mente se quiebra un instante. Cuando vuelve, el miedo no lo abandona.",
+          "dano": 10,
+          "efectos": "Aturdido 1 ronda; asustado 1 minuto"
+        },
+        "E": {
+          "texto": "La energía le quema el alma. Siente cómo una parte de su vida se escapa para siempre.",
+          "dano": 12,
+          "efectos": "Aturdido 2 rondas; 1 nivel de agotamiento"
+        }
+      },
+      {
+        "min": 56,
+        "max": 70,
+        "A": {
+          "texto": "Su mano se marchita como una hoja en otoño. Ya no responde.",
+          "dano": 5,
+          "efectos": "Mano inútil hasta curación"
+        },
+        "B": {
+          "texto": "Una ilusión le muestra a sus aliados como monstruos. Ataca a quien tiene más cerca.",
+          "dano": 7,
+          "efectos": "Confundido 1 ronda (ataca aliado más cercano)"
+        },
+        "C": {
+          "texto": "Su cuerpo deja de obedecerle. Queda paralizado, consciente y aterrado.",
+          "dano": 9,
+          "efectos": "Paralizado 1 ronda"
+        },
+        "D": {
+          "texto": "Sus ojos arden con una luz que no es suya. Queda ciego.",
+          "dano": 11,
+          "efectos": "Cegado hasta curación"
+        },
+        "E": {
+          "texto": "La magia le arranca parte de su fuerza vital. Envejece ante tus ojos.",
+          "dano": 13,
+          "efectos": "1 nivel de agotamiento; aturdido 2 rondas"
+        }
+      },
+      {
+        "min": 71,
+        "max": 85,
+        "A": {
+          "texto": "Un terror sobrenatural se apodera de él. Huye, sin importarle nada.",
+          "dano": 6,
+          "efectos": "Asustado 1 minuto; huye"
+        },
+        "B": {
+          "texto": "La energía le corroe la piel hasta el músculo. Sangra, aturdido.",
+          "dano": 8,
+          "efectos": "Aturdido 1 ronda; sangrado 1d6"
+        },
+        "C": {
+          "texto": "Su mente queda en blanco. Cae inconsciente.",
+          "dano": 10,
+          "efectos": "Inconsciente 1d4 rondas"
+        },
+        "D": {
+          "texto": "Envejece años en un segundo. Sus manos se arrugan, su pelo se vuelve gris.",
+          "dano": 12,
+          "efectos": "2 niveles de agotamiento"
+        },
+        "E": {
+          "texto": "La energía lo deja hueco por dentro. Agoniza, vacío.",
+          "dano": 14,
+          "efectos": "Inconsciente; muere en 1d6 rondas"
+        }
+      },
+      {
+        "min": 86,
+        "max": 95,
+        "A": {
+          "texto": "La energía lo paraliza como una estatua de piedra viva.",
+          "dano": 7,
+          "efectos": "Paralizado 1 minuto (CON CD 15 cada turno)"
+        },
+        "B": {
+          "texto": "Lo corroe desde adentro. Agoniza en silencio.",
+          "dano": 9,
+          "efectos": "Muere en 1d6 rondas"
+        },
+        "C": {
+          "texto": "Su mente se destruye. Queda mirando el vacío, para siempre.",
+          "dano": 11,
+          "efectos": "Incapacitado permanente sin curación mágica"
+        },
+        "D": {
+          "texto": "Se marchita como una flor seca. Le queda poco.",
+          "dano": 13,
+          "efectos": "Muere en 1d4 rondas"
+        },
+        "E": {
+          "texto": "La energía lo consume por completo. No queda nada.",
+          "dano": 15,
+          "efectos": "Muerte instantánea"
+        }
+      },
+      {
+        "min": 96,
+        "max": 100,
+        "A": {
+          "texto": "La magia lo eleva en el aire, inerte, y lo deja caer como un muñeco.",
+          "dano": 8,
+          "efectos": "Paralizado; derribado al terminar"
+        },
+        "B": {
+          "texto": "Su fuerza vital se drena hasta casi desaparecer. Cae inconsciente.",
+          "dano": 10,
+          "efectos": "Inconsciente; 2 niveles de agotamiento"
+        },
+        "C": {
+          "texto": "Se disuelve parcialmente en el aire. Muere en el acto.",
+          "dano": 12,
+          "efectos": "Muerte instantánea"
+        },
+        "D": {
+          "texto": "Cae con los ojos vacíos. Su alma ya se fue.",
+          "dano": 14,
+          "efectos": "Muerte instantánea"
+        },
+        "E": {
+          "texto": "Se desarma en partículas de luz o sombra que se dispersan en el viento.",
+          "dano": 16,
+          "efectos": "Muerte instantánea"
+        }
+      },
+      {
+        "min": 101,
+        "max": 125,
+        "A": {
+          "texto": "Por un instante desaparece de la realidad. Cuando vuelve, no sabe dónde está.",
+          "dano": 9,
+          "efectos": "Desaparece hasta el final de su próximo turno; aturdido al volver"
+        },
+        "B": {
+          "texto": "Su alma se desgarra. Agoniza.",
+          "dano": 11,
+          "efectos": "Inconsciente; muere en 1d4 rondas"
+        },
+        "C": {
+          "texto": "Desintegrado de la cintura para arriba.",
+          "dano": 13,
+          "efectos": "Muerte instantánea"
+        },
+        "D": {
+          "texto": "Se convierte en polvo.",
+          "dano": 15,
+          "efectos": "Muerte instantánea"
+        },
+        "E": {
+          "texto": "Borrado de la existencia. Como si nunca hubiera nacido.",
+          "dano": 17,
+          "efectos": "Muerte instantánea"
+        }
+      },
+      {
+        "min": 126,
+        "max": 999,
+        "A": {
+          "texto": "Una onda arcana estalla a su alrededor y sacude a todos los cercanos.",
+          "dano": 10,
+          "efectos": "Aturdido; criaturas en 10 pies: CON CD 15 o aturdidas 1 ronda"
+        },
+        "B": {
+          "texto": "Su alma es arrancada de su cuerpo. Muere al instante.",
+          "dano": 12,
+          "efectos": "Muerte instantánea"
+        },
+        "C": {
+          "texto": "Estalla en energía pura que golpea a todos alrededor.",
+          "dano": 14,
+          "efectos": "Muerte instantánea; 2d6 fuerza en 10 pies"
+        },
+        "D": {
+          "texto": "Se convierte en polvo que el viento se lleva.",
+          "dano": 16,
+          "efectos": "Muerte instantánea"
+        },
+        "E": {
+          "texto": "No queda nada, ni siquiera el recuerdo. Su alma está perdida para siempre.",
+          "dano": 18,
+          "efectos": "Muerte instantánea; no puede ser revivido con magia menor a 7º nivel"
+        }
+      }
+    ]
+  },
+  "pifia_cuerpo": {
+    "label": "Pifia cuerpo a cuerpo",
+    "tipo": "pifia",
+    "filas": [
+      {
+        "min": 1,
+        "max": 10,
+        "texto": "Un mal paso, un ritmo roto. Tu cuerpo va por un lado y tu arma por otro.",
+        "dano": 0,
+        "efectos": "Pierde su reacción"
+      },
+      {
+        "min": 11,
+        "max": 25,
+        "texto": "El arma se te resbala entre los dedos y la atrapás en el último instante, con el corazón en la garganta.",
+        "dano": 0,
+        "efectos": "Desventaja en su próximo ataque"
+      },
+      {
+        "min": 26,
+        "max": 40,
+        "texto": "Te enredás con tus propios pies y caés de bruces, ante la mirada burlona de tu enemigo.",
+        "dano": 0,
+        "efectos": "Derribado"
+      },
+      {
+        "min": 41,
+        "max": 55,
+        "texto": "Tu golpe se estrella contra el suelo. La vibración te sube por el brazo hasta los dientes.",
+        "dano": 0,
+        "efectos": "Desventaja en ataques 1 ronda"
+      },
+      {
+        "min": 56,
+        "max": 70,
+        "texto": "El arma se te escapa de las manos y cae, rodando lejos, mientras tu enemigo sonríe.",
+        "dano": 0,
+        "efectos": "Desarmado (cae a 5 pies)"
+      },
+      {
+        "min": 71,
+        "max": 85,
+        "texto": "Tu tobillo se dobla en un ángulo traicionero. El dolor te sube como un rayo por la pierna.",
+        "dano": 0,
+        "efectos": "Velocidad a la mitad 1 minuto"
+      },
+      {
+        "min": 86,
+        "max": 95,
+        "texto": "Tu arma queda trabada en la armadura del enemigo. Tirás, pero no sale. Ahora él la tiene.",
+        "dano": 0,
+        "efectos": "Desarmado; el arma queda en el enemigo"
+      },
+      {
+        "min": 96,
+        "max": 100,
+        "texto": "Tu golpe sale desviado y encuentra la carne equivocada: la de un aliado.",
+        "dano": 0,
+        "efectos": "Tira el daño del arma contra un aliado a 5 pies"
+      },
+      {
+        "min": 101,
+        "max": 125,
+        "texto": "Tu propia arma rebota y te muerde. La sangre que corre es tuya.",
+        "dano": 0,
+        "efectos": "Recibe el daño del arma"
+      },
+      {
+        "min": 126,
+        "max": 999,
+        "texto": "Con un crujido terrible, tu arma se parte o sale volando lejos. Quedás aturdido, con las manos vacías.",
+        "dano": 0,
+        "efectos": "Arma no mágica rota; mágica cae a 20 pies; aturdido 1 ronda"
+      }
+    ]
+  },
+  "pifia_distancia": {
+    "label": "Pifia a distancia",
+    "tipo": "pifia",
+    "filas": [
+      {
+        "min": 1,
+        "max": 10,
+        "texto": "El proyectil se pierde en el aire, sin gloria ni consecuencias.",
+        "dano": 0,
+        "efectos": ""
+      },
+      {
+        "min": 11,
+        "max": 25,
+        "texto": "El tiro sale torcido, girando sin control. Tu concentración se rompe.",
+        "dano": 0,
+        "efectos": "Desventaja en su próximo ataque"
+      },
+      {
+        "min": 26,
+        "max": 40,
+        "texto": "Tu carcaj se vuelca y las flechas caen al suelo, desparramadas.",
+        "dano": 0,
+        "efectos": "Pierde 1d6 proyectiles"
+      },
+      {
+        "min": 41,
+        "max": 55,
+        "texto": "La cuerda o el mecanismo se traba con un chasquido. Tenés que liberarlo antes de volver a tirar.",
+        "dano": 0,
+        "efectos": "Usa su próxima acción para destrabar"
+      },
+      {
+        "min": 56,
+        "max": 70,
+        "texto": "La cuerda te corta los dedos. La sangre te mancha el arco y la puntería.",
+        "dano": 0,
+        "efectos": "Desventaja en ataques a distancia 1 minuto"
+      },
+      {
+        "min": 71,
+        "max": 85,
+        "texto": "Al disparar, perdés el equilibrio y caés de espaldas.",
+        "dano": 0,
+        "efectos": "Derribado"
+      },
+      {
+        "min": 86,
+        "max": 95,
+        "texto": "El proyectil vuela hacia un aliado cercano al objetivo. Un grito de sorpresa.",
+        "dano": 0,
+        "efectos": "Tira el ataque contra un aliado a 5 pies del objetivo"
+      },
+      {
+        "min": 96,
+        "max": 100,
+        "texto": "La cuerda se rompe con un latigazo. Tu arma queda inútil hasta repararla.",
+        "dano": 0,
+        "efectos": "Arma inutilizable hasta reparar (descanso corto)"
+      },
+      {
+        "min": 101,
+        "max": 125,
+        "texto": "El proyectil rebota en una superficie y vuelve hacia vos.",
+        "dano": 0,
+        "efectos": "Recibe la mitad del daño del arma"
+      },
+      {
+        "min": 126,
+        "max": 999,
+        "texto": "Tu arma se parte en dos con un crujido. Sólo te quedan los pedazos.",
+        "dano": 0,
+        "efectos": "Arma no mágica destruida; mágica inutilizable 1 hora"
+      }
+    ]
+  },
+  "pifia_conjuro": {
+    "label": "Pifia de conjuro",
+    "tipo": "pifia",
+    "filas": [
+      {
+        "min": 1,
+        "max": 10,
+        "texto": "La energía chisporrotea en tus dedos y se apaga como una vela al viento.",
+        "dano": 0,
+        "efectos": ""
+      },
+      {
+        "min": 11,
+        "max": 25,
+        "texto": "Te tiembla la voz en la última sílaba. El conjuro que sostenías se desvanece.",
+        "dano": 0,
+        "efectos": "Pierde concentración en conjuros"
+      },
+      {
+        "min": 26,
+        "max": 40,
+        "texto": "Un dolor punzante te atraviesa la cabeza. La magia se resiste.",
+        "dano": 0,
+        "efectos": "Desventaja en su próxima tirada de conjuro"
+      },
+      {
+        "min": 41,
+        "max": 55,
+        "texto": "El conjuro te estalla en las manos. Sentís el mordisco de tu propia magia.",
+        "dano": 0,
+        "efectos": "Recibe 1d6 del tipo de daño del conjuro"
+      },
+      {
+        "min": 56,
+        "max": 70,
+        "texto": "Sentís cómo la magia se escapa de tu cuerpo, dejándote vacío por un instante.",
+        "dano": 0,
+        "efectos": "No puede lanzar conjuros hasta el final de su próximo turno"
+      },
+      {
+        "min": 71,
+        "max": 85,
+        "texto": "Un destello cegador te estalla en la cara. No ves nada.",
+        "dano": 0,
+        "efectos": "Cegado 1 ronda"
+      },
+      {
+        "min": 86,
+        "max": 95,
+        "texto": "El conjuro se desvía hacia otro objetivo, guiado por una voluntad que no es la tuya.",
+        "dano": 0,
+        "efectos": "Repetir el ataque contra criatura aleatoria a alcance"
+      },
+      {
+        "min": 96,
+        "max": 100,
+        "texto": "La magia rebota contra vos con fuerza brutal. Quedás aturdido.",
+        "dano": 0,
+        "efectos": "Aturdido 1 ronda; recibe 2d6 de fuerza"
+      },
+      {
+        "min": 101,
+        "max": 125,
+        "texto": "El conjuro te consume más energía de la que debía. Un espacio de conjuro se quema para nada.",
+        "dano": 0,
+        "efectos": "Pierde un espacio de conjuro del mismo nivel"
+      },
+      {
+        "min": 126,
+        "max": 999,
+        "texto": "La magia se descontrola. El tejido arcano se rasga, y algo muy extraño sucede.",
+        "dano": 0,
+        "efectos": "Tirar en tabla de Oleada de Magia Salvaje; aturdido 1 ronda"
+      }
+    ]
+  }
+}
