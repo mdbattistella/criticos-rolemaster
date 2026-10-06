@@ -2,7 +2,7 @@
   "id": "criticos-rolemaster",
   "title": "Críticos Rolemaster",
   "description": "Críticos y pifias estilo Rolemaster para dnd5e: severidad A–E según margen sobre la CA, tabla según tipo de daño del arma y tirada d100 abierta.",
-  "version": "0.3.0",
+  "version": "0.4.1",
   "authors": [{ "name": "Martín Battistella" }],
   "compatibility": { "minimum": "13", "verified": "14" },
   "relationships": {

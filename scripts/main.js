@@ -8,6 +8,26 @@ const MAPEO_DANO = {
   fire: "calor", cold: "frio", lightning: "electrico", thunder: "impacto"
 };
 
+const RE_SIN_ARMAS = /unarmed|sin armas|desarmad|arte[s]? marcial|martial|pu[ñn]o|patada|kick|punch|ki\b|r[aá]faga/i;
+
+function tiposDano(item, activity) {
+  const out = new Set();
+  for (const p of activity?.damage?.parts ?? []) for (const t of p?.types ?? []) out.add(t);
+  for (const t of item?.system?.damage?.base?.types ?? []) out.add(t);
+  return [...out];
+}
+
+function tablaCritico(item, activity) {
+  const id = item?.system?.identifier ?? "";
+  if (id === "unarmed-strike" || RE_SIN_ARMAS.test(item?.name ?? "") || RE_SIN_ARMAS.test(activity?.name ?? "")) return "artes_marciales";
+  const tipos = tiposDano(item, activity);
+  const fisico = tipos.find(t => MAPEO_DANO[t]);
+  if (fisico) return MAPEO_DANO[fisico];
+  if (tipos.length) return "magico";
+  // Sin tipo definido: arma física → aplastamiento, el resto → mágico
+  return item?.type === "weapon" ? "aplastamiento" : "magico";
+}
+
 // Severidad por margen sobre la CA: 15+ = E, hacia abajo cada ~4
 function severidad(margen) {
   if (margen >= 15) return "E";
@@ -33,14 +53,16 @@ Hooks.once("ready", async () => {
   });
 });
 
-// dnd5e 4.x usa rollAttackV2, 5.x usa rollAttack
+// dnd5e puede disparar rollAttack y rollAttackV2 para la misma tirada: se procesa una sola vez
+const PROCESADAS = new WeakSet();
 for (const h of ["dnd5e.rollAttack", "dnd5e.rollAttackV2"]) {
   Hooks.on(h, (rolls, { subject } = {}) => onAtaque(rolls, subject));
 }
 
 async function onAtaque(rolls, activity) {
   const roll = rolls?.[0];
-  if (!roll) return;
+  if (!roll || PROCESADAS.has(roll)) return;
+  PROCESADAS.add(roll);
   const d20 = roll.dice.find(d => d.faces === 20);
   const nat = d20?.results.find(r => r.active && !r.discarded)?.result;
   if (nat !== 20 && nat !== 1) return;
@@ -52,8 +74,7 @@ async function onAtaque(rolls, activity) {
 
   let tabla, sev = null, detalle;
   if (nat === 20) {
-    const tipos = [...(activity?.damage?.parts?.[0]?.types ?? item?.system?.damage?.base?.types ?? [])];
-    tabla = MAPEO_DANO[tipos[0]] ?? "magico";
+    tabla = tablaCritico(item, activity);
     const margen = ca != null ? roll.total - ca : 0;
     sev = severidad(margen);
     detalle = ca != null ? `Total ${roll.total} vs CA ${ca} (margen ${margen})` : "Sin objetivo: severidad A";

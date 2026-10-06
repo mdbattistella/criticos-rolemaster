@@ -1,7 +1,7 @@
-.crm-card { border-left: 4px solid #8b1a1a; padding: 4px 8px; }
-.crm-card.pifia { border-color: #555; }
+.crm-card { border-left: 4px solid #2e9e44; padding: 4px 8px; }
+.crm-card.pifia { border-left-color: #c62828; }
 .crm-card h3 { margin: 0 0 4px; font-size: 1.1em; }
-.crm-card .crm-sev { font-weight: bold; color: #8b1a1a; }
+.crm-card .crm-sev { font-weight: bold; color: #2e9e44; }
 .crm-card .crm-tiradas { font-size: .85em; opacity: .8; }
 .crm-card .crm-texto { margin: 6px 0; font-style: italic; }
 .crm-card button { margin-top: 4px; }

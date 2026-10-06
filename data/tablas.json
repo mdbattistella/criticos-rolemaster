@@ -2071,6 +2071,302 @@
       }
     ]
   },
+  "artes_marciales": {
+    "label": "Artes Marciales",
+    "tipo": "critico",
+    "filas": [
+      {
+        "min": 1,
+        "max": 10,
+        "A": {
+          "texto": "Tu puño roza su mejilla. No duele, pero sabe que pudiste hacer más.",
+          "dano": 1,
+          "efectos": ""
+        },
+        "B": {
+          "texto": "Un golpe rápido al hombro le desarma el ritmo. Duda antes de volver a atacar.",
+          "dano": 3,
+          "efectos": "Desventaja en su próximo ataque"
+        },
+        "C": {
+          "texto": "Tu talón le encuentra el muslo. La pierna le tiembla como un junco al viento.",
+          "dano": 5,
+          "efectos": "Velocidad -10 pies 1 ronda"
+        },
+        "D": {
+          "texto": "Un codazo seco al plexo le vacía el aire de los pulmones.",
+          "dano": 7,
+          "efectos": "Pierde su reacción"
+        },
+        "E": {
+          "texto": "Una ráfaga de golpes, uno tras otro, demasiado rápidos para seguirlos. Queda aturdido, sin saber cuál dolió más.",
+          "dano": 9,
+          "efectos": "Aturdido 1 ronda"
+        }
+      },
+      {
+        "min": 11,
+        "max": 25,
+        "A": {
+          "texto": "Un amague y un golpe a la oreja. Le zumba la cabeza.",
+          "dano": 2,
+          "efectos": "Desventaja en Percepción 1 ronda"
+        },
+        "B": {
+          "texto": "Golpeás la muñeca del arma con el canto de la mano. Los dedos se abren solos.",
+          "dano": 4,
+          "efectos": "Salvación FUE CD 12 o desarmado"
+        },
+        "C": {
+          "texto": "Tu barrida le saca los pies del suelo. Cae de espaldas con un golpe sordo.",
+          "dano": 6,
+          "efectos": "Derribado"
+        },
+        "D": {
+          "texto": "Un golpe de palma al mentón le sacude el cerebro dentro del cráneo.",
+          "dano": 8,
+          "efectos": "Aturdido 1 ronda"
+        },
+        "E": {
+          "texto": "Tu rodilla sube al estómago y tu codo baja a la nuca. Se dobla como un junco quebrado.",
+          "dano": 10,
+          "efectos": "Aturdido 1 ronda; derribado"
+        }
+      },
+      {
+        "min": 26,
+        "max": 40,
+        "A": {
+          "texto": "Un golpe a las costillas flotantes le arranca un gemido.",
+          "dano": 3,
+          "efectos": "Desventaja en su próximo ataque"
+        },
+        "B": {
+          "texto": "Golpeás el nervio del brazo. El miembro entero se le duerme.",
+          "dano": 5,
+          "efectos": "Brazo inútil 1 ronda"
+        },
+        "C": {
+          "texto": "Una patada lateral a la rodilla lo hace tambalear hacia atrás.",
+          "dano": 7,
+          "efectos": "Empujado 10 pies; velocidad a la mitad 1 ronda"
+        },
+        "D": {
+          "texto": "Tus dedos encuentran un punto de presión en el cuello. Su cuerpo se congela.",
+          "dano": 9,
+          "efectos": "Paralizado hasta el final de su próximo turno"
+        },
+        "E": {
+          "texto": "Una patada giratoria lo alcanza en la sien. Gira sobre sí mismo y se desploma.",
+          "dano": 11,
+          "efectos": "Derribado; aturdido 1 ronda"
+        }
+      },
+      {
+        "min": 41,
+        "max": 55,
+        "A": {
+          "texto": "Lo empujás con ambas palmas y lo hacés retroceder varios pasos.",
+          "dano": 4,
+          "efectos": "Empujado 10 pies"
+        },
+        "B": {
+          "texto": "Golpe de nudillos a los ojos. Lagrimea y lanza golpes a ciegas.",
+          "dano": 6,
+          "efectos": "Cegado 1 ronda"
+        },
+        "C": {
+          "texto": "Atrapás su brazo, girás y lo arrojás por encima de tu cadera.",
+          "dano": 8,
+          "efectos": "Derribado; desarmado"
+        },
+        "D": {
+          "texto": "Tu talón cae sobre su pie y lo quiebra. Grita y salta en una pierna.",
+          "dano": 10,
+          "efectos": "Velocidad a la mitad hasta curación"
+        },
+        "E": {
+          "texto": "Una lluvia de golpes al torso. Algo cruje adentro y escupe sangre.",
+          "dano": 12,
+          "efectos": "Aturdido 2 rondas"
+        }
+      },
+      {
+        "min": 56,
+        "max": 70,
+        "A": {
+          "texto": "Un golpe seco a la garganta le corta la voz.",
+          "dano": 5,
+          "efectos": "Sin conjuros V 1 ronda"
+        },
+        "B": {
+          "texto": "Le dislocás el hombro con una llave rápida. El brazo cuelga sin vida.",
+          "dano": 7,
+          "efectos": "Brazo inútil hasta curación; desarmado"
+        },
+        "C": {
+          "texto": "Patada frontal al pecho que lo lanza contra lo que tenga detrás.",
+          "dano": 9,
+          "efectos": "Empujado 15 pies; derribado"
+        },
+        "D": {
+          "texto": "Golpeás tres puntos de presión en un instante. Su cuerpo deja de obedecerle.",
+          "dano": 11,
+          "efectos": "Paralizado 1 ronda"
+        },
+        "E": {
+          "texto": "Un golpe de palma al corazón. Se detiene un latido y cae de rodillas, pálido.",
+          "dano": 13,
+          "efectos": "Aturdido 2 rondas; derribado"
+        }
+      },
+      {
+        "min": 71,
+        "max": 85,
+        "A": {
+          "texto": "Tu codo le parte la nariz. La sangre le inunda la boca y la vista se le nubla.",
+          "dano": 6,
+          "efectos": "Desventaja en ataques 2 rondas"
+        },
+        "B": {
+          "texto": "Una llave al codo y un crujido seco. El brazo se dobla al revés.",
+          "dano": 8,
+          "efectos": "Brazo inútil hasta curación; aturdido 1 ronda"
+        },
+        "C": {
+          "texto": "Le partís la rodilla con una patada descendente. La pierna se dobla en un ángulo imposible.",
+          "dano": 10,
+          "efectos": "Derribado; velocidad 0 hasta curación"
+        },
+        "D": {
+          "texto": "Un golpe a la sien lo apaga como una vela.",
+          "dano": 12,
+          "efectos": "Inconsciente 1d4 rondas"
+        },
+        "E": {
+          "texto": "Tus golpes se encadenan como una danza mortal: costillas, hígado, mandíbula. Cae, quebrado.",
+          "dano": 14,
+          "efectos": "Inconsciente 1 minuto"
+        }
+      },
+      {
+        "min": 86,
+        "max": 95,
+        "A": {
+          "texto": "Una patada voladora lo derriba y le roba el aliento.",
+          "dano": 7,
+          "efectos": "Derribado; aturdido 1 ronda"
+        },
+        "B": {
+          "texto": "Le quebrás tres costillas con un golpe de canto. Respirar es un suplicio.",
+          "dano": 9,
+          "efectos": "Desventaja en FUE y DES hasta curación; aturdido 1 ronda"
+        },
+        "C": {
+          "texto": "Golpe de palma ascendente a la nariz. El hueso se mete hacia adentro.",
+          "dano": 11,
+          "efectos": "Inconsciente 1d4 rondas"
+        },
+        "D": {
+          "texto": "Tu golpe al cuello le aplasta la tráquea. Se ahoga, aferrándose la garganta.",
+          "dano": 13,
+          "efectos": "Muere en 1d4 rondas"
+        },
+        "E": {
+          "texto": "Encontrás el punto exacto en la base del cráneo. Cae como si le hubieran cortado los hilos.",
+          "dano": 15,
+          "efectos": "Inconsciente; muere en 1d6 rondas"
+        }
+      },
+      {
+        "min": 96,
+        "max": 100,
+        "A": {
+          "texto": "Tu golpe resuena como un gong. Lo arroja por el aire.",
+          "dano": 8,
+          "efectos": "Empujado 20 pies; derribado; aturdido 1 ronda"
+        },
+        "B": {
+          "texto": "Una llave brutal le quiebra el brazo y el hombro a la vez.",
+          "dano": 10,
+          "efectos": "Brazo inútil permanente sin curación mágica"
+        },
+        "C": {
+          "texto": "Patada giratoria al cuello. La cabeza gira demasiado.",
+          "dano": 12,
+          "efectos": "Paralizado permanente sin curación mágica"
+        },
+        "D": {
+          "texto": "Tu puño atraviesa su guardia y le hunde el pecho. El corazón se detiene.",
+          "dano": 14,
+          "efectos": "Muere en 1d4 rondas"
+        },
+        "E": {
+          "texto": "El Golpe de la Palma Temblorosa: no pasa nada… y luego cae, muerto, sin una marca.",
+          "dano": 16,
+          "efectos": "Muerte instantánea"
+        }
+      },
+      {
+        "min": 101,
+        "max": 125,
+        "A": {
+          "texto": "Un torbellino de golpes que lo deja de rodillas, sin saber de dónde vinieron.",
+          "dano": 9,
+          "efectos": "Aturdido 2 rondas; derribado"
+        },
+        "B": {
+          "texto": "Le partís la columna sobre tu rodilla.",
+          "dano": 11,
+          "efectos": "Paralizado permanente sin curación mágica"
+        },
+        "C": {
+          "texto": "Golpe a la sien con toda tu fuerza interior. El cráneo cede.",
+          "dano": 13,
+          "efectos": "Muerte instantánea"
+        },
+        "D": {
+          "texto": "Le quebrás el cuello con un giro limpio y silencioso.",
+          "dano": 15,
+          "efectos": "Muerte instantánea"
+        },
+        "E": {
+          "texto": "Tu puño atraviesa su pecho y sale por la espalda.",
+          "dano": 17,
+          "efectos": "Muerte instantánea"
+        }
+      },
+      {
+        "min": 126,
+        "max": 999,
+        "A": {
+          "texto": "Concentrás tu ki en un solo golpe. La onda lo arroja y derriba a los que están detrás.",
+          "dano": 10,
+          "efectos": "Inconsciente; criaturas a 5 pies detrás: derribadas"
+        },
+        "B": {
+          "texto": "Un golpe perfecto al centro de su ser. Su espíritu abandona el cuerpo.",
+          "dano": 12,
+          "efectos": "Muerte instantánea"
+        },
+        "C": {
+          "texto": "Le arrancás la vida con un toque al corazón. Cae sin un sonido.",
+          "dano": 14,
+          "efectos": "Muerte instantánea"
+        },
+        "D": {
+          "texto": "Una patada que le separa la cabeza de los hombros.",
+          "dano": 16,
+          "efectos": "Muerte instantánea"
+        },
+        "E": {
+          "texto": "El golpe definitivo del maestro. El silencio cae sobre el campo, y sus aliados huyen ante tu leyenda.",
+          "dano": 18,
+          "efectos": "Muerte instantánea; enemigos a 30 pies: salvación SAB CD 15 o asustados"
+        }
+      }
+    ]
+  },
   "magico": {
     "label": "Mágico",
     "tipo": "critico",
