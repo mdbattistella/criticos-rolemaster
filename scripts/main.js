@@ -43,7 +43,28 @@ Hooks.once("init", () => {
     hint: "Multiplicador del daño extra de las tablas (1 = tal cual).",
     scope: "world", config: true, type: Number, default: 1
   });
+  game.settings.register(MOD, "delayCritico", {
+    name: "Demora del aviso de crítico/pifia (ms)",
+    hint: "Espera antes de mostrar la tarjeta, para no adelantarse a la animación de dados. Con Dice So Nice espera a que termine la animación (este valor es el máximo).",
+    scope: "world", config: true, type: Number, default: 2500
+  });
 });
+
+const dormir = ms => new Promise(r => setTimeout(r, ms));
+
+// Espera a que termine la animación de dados del ataque (Dice So Nice) o la demora configurada
+async function esperarAnimacion() {
+  const ms = Math.max(0, game.settings.get(MOD, "delayCritico") ?? 0);
+  if (game.dice3d) {
+    await Promise.race([
+      new Promise(r => Hooks.once("diceSoNiceRollComplete", r)),
+      dormir(Math.max(ms, 6000))
+    ]);
+    await dormir(300);
+  } else {
+    await dormir(ms);
+  }
+}
 
 Hooks.once("ready", async () => {
   TABLAS = await (await fetch(`modules/${MOD}/data/tablas.json`)).json();
@@ -85,6 +106,8 @@ async function onAtaque(rolls, activity) {
     detalle = item ? item.name : "";
   }
 
+  await esperarAnimacion();
+
   const t = TABLAS?.[tabla];
   const titulo = nat === 20 ? `¡Crítico! ${t?.label} ${sev}` : `¡Pifia! ${t?.label}`;
   await ChatMessage.create({
@@ -99,23 +122,24 @@ async function onAtaque(rolls, activity) {
 }
 
 // d100 abierta: 96+ vuelve a tirar y suma
+// Las tiradas se adjuntan al mensaje: Dice So Nice las anima y recién después muestra el resultado
 async function tiradaAbierta() {
-  const tiradas = [];
+  const rolls = [], tiradas = [];
   let total = 0, r;
   do {
     r = await new Roll("1d100").evaluate();
-    if (game.dice3d) await game.dice3d.showForRoll(r, game.user, true);
+    rolls.push(r);
     tiradas.push(r.total);
     total += r.total;
   } while (r.total >= 96);
-  return { total, tiradas };
+  return { total, tiradas, rolls };
 }
 
 async function onTirar(btn) {
   const { tabla, sev, target, actor } = btn.dataset;
   const t = TABLAS?.[tabla];
   if (!t) return ui.notifications.error(`Tabla "${tabla}" no encontrada`);
-  const { total, tiradas } = await tiradaAbierta();
+  const { total, tiradas, rolls } = await tiradaAbierta();
   const fila = t.filas.find(f => total >= f.min && total <= f.max) ?? t.filas.at(-1);
   const res = t.tipo === "critico" ? fila[sev] : fila;
   const monto = Math.round((res.dano ?? 0) * game.settings.get(MOD, "multDano"));
@@ -123,6 +147,8 @@ async function onTirar(btn) {
 
   await ChatMessage.create({
     speaker: ChatMessage.getSpeaker({ actor: actor ? await fromUuid(actor) : null }),
+    rolls,
+    sound: game.dice3d ? null : CONFIG.sounds.dice,
     content: `<div class="crm-card ${t.tipo === "pifia" ? "pifia" : ""}">
       <h3>${t.label}${sev ? ` <span class="crm-sev">${sev}</span>` : ""} — ${total}</h3>
       <div class="crm-tiradas">d100 abierta: ${tiradas.join(" + ")}</div>
